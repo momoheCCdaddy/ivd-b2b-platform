@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #006B7F;
+    --color-secondary: #0F1E2E;
+    --color-signal: #00994D;
+    --color-warm: #C8963E;
+    --color-bg: #FAFBFC;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-[var(--color-bg)] text-secondary-700 font-sans;
+  }
+
+  ::selection {
+    @apply bg-primary-200 text-primary-900;
+  }
+
+  /* Typographic rhythm */
+  h1, h2, h3, h4, h5 {
+    @apply font-display tracking-tight;
+  }
+
+  /* Focus ring */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-500;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-800 tracking-tight leading-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-bold text-secondary-800;
+  }
+
+  .heading-3 {
+    @apply text-2xl font-semibold text-secondary-800;
+  }
+
+  .body-text {
+    @apply text-base md:text-lg text-secondary-400 leading-relaxed;
+  }
+
+  /* Glass surface */
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-white/30 shadow-sm;
+  }
+
+  /* Card with subtle scientific tint */
+  .card-science {
+    @apply bg-white border border-secondary-100/50 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .card-science:hover {
+    @apply border-primary-200/50;
+  }
+
+  /* Gradient banners */
+  .gradient-hero {
+    background: linear-gradient(135deg, #006B7F 0%, #00404D 50%, #0F1E2E 100%);
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, #006B7F 0%, #00994D 100%);
+  }
+
+  /* Stats callout style (inspired by leadingmed) */
+  .stat-number {
+    @apply font-display text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  /* Product ID badge */
+  .id-badge {
+    @apply text-[10px] font-mono font-medium px-1.5 py-0.5 rounded;
+  }
+
+  /* Separator */
+  .divider-science {
+    @apply h-px bg-gradient-to-r from-transparent via-primary-200/50 to-transparent my-8;
+  }
+
+  /* Hover lift */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-secondary-50/50; }
+  ::-webkit-scrollbar-thumb { @apply bg-secondary-200 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-secondary-300; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+
+  .bg-grid-subtle {
+    background-image:
+      linear-gradient(rgba(0, 107, 127, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 107, 127, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .bg-dots-subtle {
+    background-image: radial-gradient(rgba(0, 107, 127, 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-signal-500;
+  }
+}
