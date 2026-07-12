@@ -227,6 +227,12 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 className="w-full flex items-center justify-center gap-2 bg-primary-500 text-white py-3 rounded-xl text-sm font-medium hover:bg-primary-600 transition-all shadow-sm hover:shadow-md">
                 <ExternalLink className="w-4 h-4" /> {t("products.detail.requestQuoteBtn")}
               </button>
+              {product.listPrice && product.listPrice !== "nan" && product.listPrice !== "询价" && product.listPrice !== "下架" && (
+                <button onClick={() => router.push(`/quote?product=${encodeURIComponent(product.id)}`)}
+                  className="mt-2 w-full rounded-xl border border-primary-200 bg-primary-50 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-100">
+                  Instant price & PDF quote
+                </button>
+              )}
               {/* Price hint */}
               {product.listPrice && product.listPrice !== "nan" && product.listPrice !== "下架" && (
                 <div className="mt-4 pt-4 border-t border-secondary-100/50">
