@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ChevronRight, ArrowLeft, FileText, FlaskConical, ShieldCheck, Download, Mail, Phone, ExternalLink, Tag, Activity, Database, Beaker } from "lucide-react";
+import { ChevronRight, ArrowLeft, FileText, FlaskConical, Mail, Phone, ExternalLink, Tag, Activity, Database } from "lucide-react";
 import { productCategories } from "@/data/products";
 import { useI18n } from "@/lib/i18n";
 
@@ -107,19 +107,6 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 </div>
               </div>
 
-              {/* QC Badges */}
-              <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-secondary-100/50">
-                <span className="flex items-center gap-1 text-[11px] text-signal-700 bg-signal-50 px-2.5 py-1 rounded-lg border border-signal-100/50">
-                  <ShieldCheck className="w-3 h-3" /> {t("products.detail.qcPassed")}
-                </span>
-                <span className="flex items-center gap-1 text-[11px] text-primary-600 bg-primary-50 px-2.5 py-1 rounded-lg border border-primary-100/50">
-                  {t("products.detail.strVerified")}
-                </span>
-                <span className="flex items-center gap-1 text-[11px] text-warm-700 bg-warm-50 px-2.5 py-1 rounded-lg border border-warm-100/50">
-                  {t("products.detail.mycoplasmaFree")}
-                </span>
-              </div>
-
               {/* Tags */}
               {tags.length > 0 && (
                 <div className="mt-5 pt-5 border-t border-secondary-100/50">
@@ -213,7 +200,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             <div className="bg-white border border-secondary-100/50 rounded-2xl p-6 shadow-sm">
               <h2 className="font-display font-semibold text-secondary-800 mb-4 text-sm">{t("products.detail.quote")}</h2>
               <p className="text-xs text-secondary-400 mb-4">{t("products.detail.quoteDesc")}</p>
-              <button onClick={() => router.push("/contact")}
+              <button onClick={() => router.push(`/contact?product=${encodeURIComponent(product.id)}&name=${encodeURIComponent(fmtName(product))}`)}
                 className="w-full flex items-center justify-center gap-2 bg-primary-500 text-white py-3 rounded-xl text-sm font-medium hover:bg-primary-600 transition-all shadow-sm hover:shadow-md">
                 <ExternalLink className="w-4 h-4" /> {t("products.detail.requestQuoteBtn")}
               </button>
@@ -257,17 +244,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               </div>
             </div>
 
-            {/* Documents */}
-            <div className="bg-white border border-secondary-100/50 rounded-2xl p-6 shadow-sm">
-              <h2 className="font-display font-semibold text-secondary-800 mb-4 text-sm">{t("products.detail.documents")}</h2>
-              <div className="space-y-2">
-                <button className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-xs text-secondary-500 hover:text-primary-600 hover:bg-primary-50/50 transition-all border border-secondary-100/50">
-                  <FileText className="w-4 h-4" /> {t("products.detail.specSheet")}
-                </button>
-                <button className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-xs text-secondary-500 hover:text-primary-600 hover:bg-primary-50/50 transition-all border border-secondary-100/50">
-                  <Download className="w-4 h-4" /> {t("products.detail.coa")}
-                </button>
-              </div>
+            <div className="rounded-2xl border border-secondary-100/50 bg-white p-6 text-xs leading-relaxed text-secondary-400 shadow-sm">
+              Product documentation, COA and batch-specific QC records are available on request and supplied after product and lot verification.
             </div>
           </div>
         </div>

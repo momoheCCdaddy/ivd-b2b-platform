@@ -3,15 +3,28 @@ import '@/app/globals.css';
 import Header from '@/components/layout/Header';
 import { I18nProvider } from '@/lib/i18n';
 import Footer from '@/components/layout/Footer';
+import CookieConsent from '@/components/privacy/CookieConsent';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ivd-b2b-platform.vercel.app';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'Cobioer | 药物靶点模型 & 诊断标准品',
     template: '%s | Cobioer BioSciences',
   },
   description:
     '南京科佰生物科技有限公司 — 领先的药物靶点模型与分子诊断标准品供应商，3000+产品，ISO13485认证，服务30+国家。',
-  keywords: ['科佰生物', '药物靶点', '诊断标准品', '分子诊断', 'IVD质控', 'CDMO', 'GPCR', '细胞模型'],
+  keywords: ['IVD products', 'diagnostic reference materials', 'drug target cell models', 'molecular diagnostics', 'IVD quality control', 'CDMO', 'GPCR cell lines', 'Cobioer'],
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    url: siteUrl,
+    siteName: 'Cobioer BioSciences',
+    title: 'Cobioer BioSciences | IVD Products & Drug Target Models',
+    description: 'IVD reference materials, research cell lines and drug target models for global laboratories and diagnostic manufacturers.',
+  },
+  twitter: { card: 'summary_large_image', title: 'Cobioer BioSciences', description: 'IVD products, diagnostic standards and drug target models for global customers.' },
 };
 
 export default function RootLayout({
@@ -35,6 +48,7 @@ export default function RootLayout({
           <Header />
           <main className="min-h-screen">{children}</main>
           <Footer />
+          <CookieConsent />
         </I18nProvider>
       </body>
     </html>

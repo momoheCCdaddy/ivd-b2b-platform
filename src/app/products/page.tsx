@@ -112,7 +112,7 @@ export default function ProductsPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 text-primary-200 text-xs font-mono mb-3">
               <FlaskConical className="w-3.5 h-3.5" />
-              <span>COBIOER PRODUCTS ? {allItems.length.toLocaleString()} {t("products.results")}</span>
+              <span>COBIOER PRODUCT CATALOG · {allItems.length.toLocaleString()} {t("products.results")}</span>
             </div>
             <h1 className="font-display text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
               {t("products.title")}
@@ -132,7 +132,7 @@ export default function ProductsPage() {
                     : "bg-white/5 text-primary-200/80 border-white/10 hover:bg-white/10 hover:text-white")}
               >
                 <CatIcon id={cat.id} />
-                <span>{cat.title}</span>
+                <span>{lang === "en" && cat.titleEn ? cat.titleEn : cat.title}</span>
                 <span className="opacity-60">({catCounts[cat.id] || 0})</span>
               </button>
             ))}
@@ -177,7 +177,7 @@ export default function ProductsPage() {
                           (isActive ? "bg-primary-50 text-primary-700 border border-primary-200/50 font-semibold" : "text-secondary-500 hover:bg-secondary-50/50")}>
                         <div className="flex items-center gap-2">
                           <span className={isActive ? "text-primary-500" : "text-secondary-300"}><CatIcon id={cat.id} /></span>
-                          <span>{cat.title}</span>
+                          <span>{lang === "en" && cat.titleEn ? cat.titleEn : cat.title}</span>
                         </div>
                         <div className="flex items-center gap-1.5">
                           <span className={"text-[10px] font-mono px-1.5 py-0.5 rounded-full " + (isActive ? "bg-primary-100 text-primary-600" : "bg-secondary-100/50 text-secondary-400")}>{total}</span>
@@ -193,7 +193,7 @@ export default function ProductsPage() {
                                 onClick={() => { setSelectedSub(subActive ? "all" : sub.id); setPage(1); }}
                                 className={"w-full text-left px-3 py-2 rounded-lg text-xs transition-all flex items-center justify-between " +
                                   (subActive ? "bg-primary-50/50 text-primary-600 font-medium" : "text-secondary-400 hover:text-secondary-600")}>
-                                <span>{sub.name}</span>
+                                <span>{lang === "en" && sub.nameEn ? sub.nameEn : sub.name}</span>
                                 <span className="text-[10px] text-secondary-300 font-mono">{(sub.products || []).length}</span>
                               </button>
                             );
