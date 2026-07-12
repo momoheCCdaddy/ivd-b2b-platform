@@ -32,6 +32,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Cobioer BioSciences',
+    alternateName: '南京科佰生物科技有限公司',
+    url: siteUrl,
+    email: 'sales@cobioer.com',
+    telephone: '400-8750-250',
+    address: { '@type': 'PostalAddress', addressLocality: 'Nanjing', addressCountry: 'CN' },
+  };
   return (
     <html lang="zh-CN">
       <head>
@@ -44,6 +54,7 @@ export default function RootLayout({
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>" />
       </head>
       <body className="font-sans antialiased">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd).replace(/</g, '\\u003c') }} />
         <I18nProvider>
           <Header />
           <main className="min-h-screen">{children}</main>

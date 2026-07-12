@@ -45,6 +45,28 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
   const tags = fmtTags(product);
   const apps = fmtApps(product);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ivd-b2b-platform.vercel.app";
+  const numericPrice = Number(String(product.listPrice || "").replace(/[^0-9.]/g, ""));
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.nameEn || product.name,
+    alternateName: product.name,
+    sku: product.id,
+    description: product.descriptionEn || product.description,
+    category: catTitle,
+    brand: { "@type": "Brand", name: catId === "leadingmed-products" ? "LeadingMed" : catId === "ningpu-qc" ? "Ningpu Diagnostics" : "Cobioer BioSciences" },
+    url: `${siteUrl}/products/${encodeURIComponent(product.id)}`,
+    ...(Number.isFinite(numericPrice) && numericPrice > 0 ? {
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "CNY",
+        price: numericPrice,
+        availability: "https://schema.org/InStock",
+        url: `${siteUrl}/contact?product=${encodeURIComponent(product.id)}`,
+      },
+    } : {}),
+  };
 
   // Build spec entries from available fields
   const specs: { label: string; labelEn: string; value: string }[] = [];
@@ -61,6 +83,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
   return (
     <div className="pt-16 min-h-screen bg-[var(--color-bg)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       {/* Breadcrumb bar */}
       <div className="border-b border-secondary-100/50 bg-white/50">
         <div className="container-page py-3">
