@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { supabaseInsert } from "@/lib/supabase-rest";
 
 export const runtime = "nodejs";
 
@@ -26,31 +27,6 @@ const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function clean(value: unknown, max = 500) {
   return typeof value === "string" ? value.trim().slice(0, max) : "";
-}
-
-async function supabaseInsert(path: string, body: unknown, returnRecord = false) {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) throw new Error("SUPABASE_NOT_CONFIGURED");
-
-  const response = await fetch(`${url.replace(/\/$/, "")}/rest/v1/${path}`, {
-    method: "POST",
-    headers: {
-      apikey: key,
-      Authorization: `Bearer ${key}`,
-      "Content-Type": "application/json",
-      Prefer: returnRecord ? "return=representation" : "return=minimal",
-    },
-    body: JSON.stringify(body),
-    cache: "no-store",
-  });
-
-  if (!response.ok) {
-    const detail = await response.text();
-    console.error("Supabase insert failed", response.status, detail.slice(0, 500));
-    throw new Error("SUPABASE_INSERT_FAILED");
-  }
-  return returnRecord ? response.json() : null;
 }
 
 export async function POST(request: NextRequest) {
@@ -116,4 +92,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Unable to save your inquiry. Please contact sales@cobioer.com." }, { status: 502 });
   }
 }
-
