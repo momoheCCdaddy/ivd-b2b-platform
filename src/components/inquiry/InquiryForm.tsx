@@ -9,7 +9,7 @@ type FormState = "idle" | "submitting" | "success" | "error";
 
 export default function InquiryForm() {
   const params = useSearchParams();
-  const { lang } = useI18n();
+  const { lang, currency } = useI18n();
   const [state, setState] = useState<FormState>("idle");
   const [feedback, setFeedback] = useState("");
   const productId = params.get("product") || "";
@@ -74,7 +74,7 @@ export default function InquiryForm() {
         <label className="text-sm font-medium text-secondary-700">Phone<input name="phone" autoComplete="tel" className={`${fieldClass} mt-2`} /></label>
         <label className="text-sm font-medium text-secondary-700">Quantity<input name="quantity" type="number" min="1" max="100000" defaultValue="1" className={`${fieldClass} mt-2`} /></label>
         <label className="text-sm font-medium text-secondary-700">Inquiry type<select name="inquiryType" className={`${fieldClass} mt-2`} defaultValue={productId ? "product" : "general"}><option value="product">Product & availability</option><option value="custom">Custom development</option><option value="distribution">Distribution partnership</option><option value="technical">Technical support</option><option value="general">General inquiry</option></select></label>
-        <label className="text-sm font-medium text-secondary-700">Preferred currency<select name="currency" className={`${fieldClass} mt-2`} defaultValue="USD"><option value="USD">USD — US Dollar</option><option value="EUR">EUR — Euro</option><option value="CNY">CNY — Chinese Yuan</option></select></label>
+        <label className="text-sm font-medium text-secondary-700">Preferred currency<select key={currency} name="currency" className={`${fieldClass} mt-2`} defaultValue={currency}><option value="USD">USD — US Dollar</option><option value="EUR">EUR — Euro</option><option value="CNY">CNY — Chinese Yuan</option></select></label>
       </div>
       <label className="block text-sm font-medium text-secondary-700">Requirements *<textarea required name="message" rows={6} defaultValue={initialMessage} className={`${fieldClass} mt-2 resize-y`} placeholder="Tell us your application, target quantity, destination and required delivery date." /></label>
       <label className="flex items-start gap-3 text-xs leading-relaxed text-secondary-500"><input required name="consentPrivacy" type="checkbox" className="mt-0.5 h-4 w-4 rounded border-secondary-300 text-primary-600" /><span>I agree to the <a href="/privacy" className="font-medium text-primary-600 hover:underline">Privacy Policy</a> and consent to processing my data to respond to this inquiry. *</span></label>
@@ -88,4 +88,3 @@ export default function InquiryForm() {
     </form>
   );
 }
-

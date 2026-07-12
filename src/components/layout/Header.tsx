@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { useI18n } from '@/lib/i18n';
 import Link from 'next/link';
-import { Menu, X, ChevronDown, FlaskConical } from 'lucide-react';
+import { Menu, X, ChevronDown, FlaskConical, Globe2 } from 'lucide-react';
+import type { Currency, Lang } from '@/lib/i18n';
 
 interface NavChild {
   labelKey: string;
@@ -66,7 +67,7 @@ const mainNavigation: NavItem[] = [
 ];
 
 export default function Header() {
-  const { lang, setLang, t } = useI18n();
+  const { lang, setLang, currency, setCurrency, t } = useI18n();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
@@ -126,12 +127,15 @@ export default function Header() {
 
           {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-3">
-            <button
-              onClick={() => setLang(lang === "zh" ? "en" : "zh")}
-              className="px-3 py-1.5 text-xs font-medium text-secondary-400 hover:text-primary-600 rounded-lg border border-secondary-200/50 hover:border-primary-300/50 hover:bg-primary-50/50 transition-all"
-            >
-              {t("lang.switch")}
-            </button>
+            <div className="flex items-center rounded-lg border border-secondary-200/60 bg-white px-2 text-secondary-500">
+              <Globe2 className="h-3.5 w-3.5" />
+              <select aria-label="Language" value={lang} onChange={event => setLang(event.target.value as Lang)} className="bg-transparent px-1.5 py-2 text-xs font-semibold outline-none">
+                <option value="en">EN</option><option value="zh">中文</option><option value="ar">العربية</option>
+              </select>
+            </div>
+            <select aria-label="Currency" value={currency} onChange={event => setCurrency(event.target.value as Currency)} className="rounded-lg border border-secondary-200/60 bg-white px-2 py-2 text-xs font-semibold text-secondary-500 outline-none">
+              <option value="USD">USD</option><option value="EUR">EUR</option><option value="CNY">CNY</option>
+            </select>
             <Link
               href="/contact"
               className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-white bg-primary-500 hover:bg-primary-600 rounded-lg transition-all shadow-sm hover:shadow-md"
@@ -180,6 +184,10 @@ export default function Header() {
               </div>
             ))}
             <div className="pt-3 mt-2 border-t border-secondary-100/30">
+              <div className="mb-3 grid grid-cols-2 gap-2">
+                <select aria-label="Language" value={lang} onChange={event => setLang(event.target.value as Lang)} className="rounded-lg border border-secondary-200 bg-white px-3 py-2.5 text-sm"><option value="en">English</option><option value="zh">中文</option><option value="ar">العربية</option></select>
+                <select aria-label="Currency" value={currency} onChange={event => setCurrency(event.target.value as Currency)} className="rounded-lg border border-secondary-200 bg-white px-3 py-2.5 text-sm"><option value="USD">USD</option><option value="EUR">EUR</option><option value="CNY">CNY</option></select>
+              </div>
               <Link href="/contact" onClick={() => setMobileOpen(false)}
                 className="flex items-center justify-center px-4 py-3 text-sm font-medium text-white bg-primary-500 hover:bg-primary-600 rounded-lg transition-all">
                 {t("header.contact")}

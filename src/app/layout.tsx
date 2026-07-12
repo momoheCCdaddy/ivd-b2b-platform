@@ -43,7 +43,7 @@ export default function RootLayout({
     address: { '@type': 'PostalAddress', addressLocality: 'Nanjing', addressCountry: 'CN' },
   };
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

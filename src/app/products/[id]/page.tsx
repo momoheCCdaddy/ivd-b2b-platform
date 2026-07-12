@@ -7,10 +7,10 @@ import { useI18n } from "@/lib/i18n";
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   const { lang, t } = useI18n();
-  const fmtName = (p: any) => lang === "en" && p.nameEn ? p.nameEn : p.name;
-  const fmtDesc = (p: any) => lang === "en" && p.descriptionEn ? p.descriptionEn : p.description;
-  const fmtApps = (p: any) => lang === "en" && p.applicationsEn?.length ? p.applicationsEn : p.applications || [];
-  const fmtTags = (p: any) => lang === "en" && p.tagsEn?.length ? p.tagsEn : p.tags || [];
+  const fmtName = (p: any) => lang !== "zh" && p.nameEn ? p.nameEn : p.name;
+  const fmtDesc = (p: any) => lang !== "zh" && p.descriptionEn ? p.descriptionEn : p.description;
+  const fmtApps = (p: any) => lang !== "zh" && p.applicationsEn?.length ? p.applicationsEn : p.applications || [];
+  const fmtTags = (p: any) => lang !== "zh" && p.tagsEn?.length ? p.tagsEn : p.tags || [];
   const router = useRouter();
 
   let product = null; let catTitle = ""; let catId = ""; let catDesc = ""; let related: any[] = [];
