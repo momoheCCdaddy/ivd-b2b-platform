@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ChevronRight, ArrowLeft, FileText, FlaskConical, Mail, Phone, ExternalLink, Tag, Activity, Database } from "lucide-react";
-import { productCategories } from "@/data/products";
+import { ChevronRight, ArrowLeft, FileText, FlaskConical, Mail, Phone, ExternalLink, Tag, Activity, Database, Loader2 } from "lucide-react";
+import type { ProductItem } from "@/data/products";
 import { useI18n } from "@/lib/i18n";
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
@@ -13,19 +13,22 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   const fmtTags = (p: any) => lang !== "zh" && p.tagsEn?.length ? p.tagsEn : p.tags || [];
   const router = useRouter();
 
-  let product = null; let catTitle = ""; let catId = ""; let catDesc = ""; let related: any[] = [];
-  for (const cat of productCategories) {
-    for (const sub of cat.items) {
-      for (const p of sub.products) {
-        if (p.id === params.id) {
-          product = p; catTitle = cat.title; catId = cat.id; catDesc = cat.description;
-          related = sub.products.filter(r => r.id !== p.id).slice(0, 4);
-        }
-      }
-    }
-  }
+  const [product, setProduct] = useState<ProductItem | null>(null);
+  const [related, setRelated] = useState<ProductItem[]>([]);
+  const [category, setCategory] = useState({ id: "", title: "", titleEn: "", description: "", descriptionEn: "" });
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
+  useEffect(() => {
+    const controller = new AbortController(); setLoading(true); setLoadError(false);
+    fetch(`/api/products/${encodeURIComponent(params.id)}`, { signal: controller.signal }).then(async response => {
+      if (!response.ok) throw new Error("NOT_FOUND"); return response.json();
+    }).then(data => { setProduct(data.product); setRelated(data.related || []); setCategory(data.category); }).catch(error => { if (error.name !== "AbortError") setLoadError(true); }).finally(() => { if (!controller.signal.aborted) setLoading(false); });
+    return () => controller.abort();
+  }, [params.id]);
 
-  if (!product) {
+  if (loading) return <div className="flex min-h-screen items-center justify-center bg-[var(--color-bg)] pt-20"><Loader2 className="h-8 w-8 animate-spin text-primary-500" /></div>;
+
+  if (!product || loadError) {
     return (
       <div className="pt-20 min-h-screen flex items-center justify-center bg-[var(--color-bg)]">
         <div className="text-center max-w-md mx-auto px-4">
@@ -45,6 +48,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
   const tags = fmtTags(product);
   const apps = fmtApps(product);
+  const catTitle = englishTitle(category, lang);
+  const catId = category.id;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ivd-b2b-platform.vercel.app";
   const numericPrice = Number(String(product.listPrice || "").replace(/[^0-9.]/g, ""));
   const structuredData = {
@@ -281,4 +286,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
       </div>
     </div>
   );
+}
+
+function englishTitle(category: { title: string; titleEn: string }, lang: string) {
+  return lang !== "zh" && category.titleEn ? category.titleEn : category.title;
 }
