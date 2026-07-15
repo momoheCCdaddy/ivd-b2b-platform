@@ -1,296 +1,32 @@
-"use client";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { ChevronRight, ArrowLeft, FileText, FlaskConical, Mail, Phone, ExternalLink, Tag, Activity, Database, Loader2, FileDown } from "lucide-react";
-import type { ProductItem } from "@/data/products";
-import { useI18n } from "@/lib/i18n";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import ProductDetailClient from "@/components/products/ProductDetailClient";
+import { productCategories } from "@/data/products";
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const { lang, t } = useI18n();
-  const fmtName = (p: any) => lang !== "zh" && p.nameEn ? p.nameEn : p.name;
-  const fmtDesc = (p: any) => lang !== "zh" && p.descriptionEn ? p.descriptionEn : p.description;
-  const fmtApps = (p: any) => lang !== "zh" && p.applicationsEn?.length ? p.applicationsEn : p.applications || [];
-  const fmtTags = (p: any) => lang !== "zh" && p.tagsEn?.length ? p.tagsEn : p.tags || [];
-  const router = useRouter();
-
-  const [product, setProduct] = useState<ProductItem | null>(null);
-  const [related, setRelated] = useState<ProductItem[]>([]);
-  const [category, setCategory] = useState({ id: "", title: "", titleEn: "", description: "", descriptionEn: "" });
-  const [loading, setLoading] = useState(true);
-  const [loadError, setLoadError] = useState(false);
-  useEffect(() => {
-    const controller = new AbortController(); setLoading(true); setLoadError(false);
-    fetch(`/api/products/${encodeURIComponent(params.id)}`, { signal: controller.signal }).then(async response => {
-      if (!response.ok) throw new Error("NOT_FOUND"); return response.json();
-    }).then(data => { setProduct(data.product); setRelated(data.related || []); setCategory(data.category); }).catch(error => { if (error.name !== "AbortError") setLoadError(true); }).finally(() => { if (!controller.signal.aborted) setLoading(false); });
-    return () => controller.abort();
-  }, [params.id]);
-
-  if (loading) return <div className="flex min-h-screen items-center justify-center bg-[var(--color-bg)] pt-20"><Loader2 className="h-8 w-8 animate-spin text-primary-500" /></div>;
-
-  if (!product || loadError) {
-    return (
-      <div className="pt-20 min-h-screen flex items-center justify-center bg-[var(--color-bg)]">
-        <div className="text-center max-w-md mx-auto px-4">
-          <div className="w-16 h-16 bg-secondary-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <FileText className="w-7 h-7 text-secondary-300" />
-          </div>
-          <h1 className="font-display text-xl font-bold text-secondary-800 mb-2">{t("products.detail.notFound")}</h1>
-          <p className="text-sm text-secondary-400 mb-6">{t("products.detail.notFoundDesc")}</p>
-          <button onClick={() => router.push("/products")}
-            className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-primary-600 bg-primary-50 hover:bg-primary-100 rounded-lg transition-all">
-            <ArrowLeft className="w-4 h-4" /> {t("products.detail.backToProducts")}
-          </button>
-        </div>
-      </div>
-    );
+function findProduct(id: string) {
+  const needle = decodeURIComponent(id).toLowerCase();
+  for (const category of productCategories) for (const subcategory of category.items) {
+    const product = subcategory.products.find(item => item.id.toLowerCase() === needle);
+    if (product) return { product, related: subcategory.products.filter(item => item.id !== product.id).slice(0, 4), category: { id: category.id, title: category.title, titleEn: category.titleEn, description: category.description, descriptionEn: category.descriptionEn } };
   }
-
-  const tags = fmtTags(product);
-  const apps = fmtApps(product);
-  const catTitle = englishTitle(category, lang);
-  const catId = category.id;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ivd-b2b-platform.vercel.app";
-  const numericPrice = Number(String(product.listPrice || "").replace(/[^0-9.]/g, ""));
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.nameEn || product.name,
-    alternateName: product.name,
-    sku: product.id,
-    description: product.descriptionEn || product.description,
-    category: catTitle,
-    brand: { "@type": "Brand", name: catId === "leadingmed-products" ? "LeadingMed" : catId === "ningpu-qc" ? "Ningpu Diagnostics" : "Cobioer BioSciences" },
-    url: `${siteUrl}/products/${encodeURIComponent(product.id)}`,
-    ...(Number.isFinite(numericPrice) && numericPrice > 0 ? {
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "CNY",
-        price: numericPrice,
-        availability: "https://schema.org/InStock",
-        url: `${siteUrl}/contact?product=${encodeURIComponent(product.id)}`,
-      },
-    } : {}),
-  };
-
-  // Build spec entries from available fields
-  const specs: { label: string; labelEn: string; value: string }[] = [];
-  if (product.parentCell) specs.push({ label: "亲本细胞", labelEn: "Parent Cell", value: product.parentCell });
-  if (product.cultureMedium) specs.push({ label: "培养基", labelEn: "Culture Medium", value: product.cultureMedium });
-  if (product.specs) specs.push({ label: "规格", labelEn: "Specification", value: product.specs });
-  if (product.stability) specs.push({ label: "稳定性", labelEn: "Stability", value: product.stability });
-  if (product.source) specs.push({ label: "来源", labelEn: "Source", value: product.source });
-  if (product.classLevel2) specs.push({ label: "分类", labelEn: "Classification", value: product.classLevel2 });
-  if (product.classLevel3) specs.push({ label: "亚型", labelEn: "Subtype", value: product.classLevel3 });
-  if (product.assayFormat) specs.push({ label: "检测方法", labelEn: "Assay Format", value: product.assayFormat });
-  if (product.transducer) specs.push({ label: "转导蛋白", labelEn: "Transducer", value: product.transducer });
-  if (product.rawApplication) specs.push({ label: "应用", labelEn: "Application", value: product.rawApplication });
-
-  return (
-    <div className="pt-16 min-h-screen bg-[var(--color-bg)]">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
-      {/* Breadcrumb bar */}
-      <div className="border-b border-secondary-100/50 bg-white/50">
-        <div className="container-page py-3">
-          <nav className="flex items-center gap-2 text-xs text-secondary-400">
-            <button onClick={() => router.push("/")} className="hover:text-primary-600 transition-colors">{t("products.detail.breadcrumb.home")}</button>
-            <ChevronRight className="w-3 h-3" />
-            <button onClick={() => router.push("/products")} className="hover:text-primary-600 transition-colors">{t("products.detail.breadcrumb.products")}</button>
-            <ChevronRight className="w-3 h-3" />
-            <span className="text-secondary-600 font-medium">{product.id}</span>
-          </nav>
-        </div>
-      </div>
-
-      <div className="container-page py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main content */}
-          <div className="lg:col-span-2 space-y-6">
-            {/* Product header */}
-            <div className="bg-white border border-secondary-100/50 rounded-2xl p-6 md:p-8 shadow-sm">
-              <div className="flex items-start gap-5">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
-                  <FlaskConical className="w-7 h-7 text-primary-600" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-2 mb-2 flex-wrap">
-                    <span className="text-[11px] font-mono font-semibold text-primary-600 bg-primary-50 px-2 py-1 rounded-md tracking-wide">
-                      {product.id}
-                    </span>
-                    <span className="text-[11px] text-secondary-400 bg-secondary-50 px-2 py-1 rounded-md">
-                      {catTitle}
-                    </span>
-                    {product.status && product.status !== "nan" && (
-                      <span className="text-[11px] text-signal-700 bg-signal-50 px-2 py-1 rounded-md border border-signal-100/50">
-                        {product.status}
-                      </span>
-                    )}
-                  </div>
-                  <h1 className="font-display text-xl md:text-2xl font-bold text-secondary-800 leading-tight">
-                    {fmtName(product)}
-                  </h1>
-                  <p className="text-sm text-secondary-400 mt-2 leading-relaxed max-w-2xl">
-                    {fmtDesc(product)}
-                  </p>
-                </div>
-              </div>
-
-              {/* Tags */}
-              {tags.length > 0 && (
-                <div className="mt-5 pt-5 border-t border-secondary-100/50">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Tag className="w-3.5 h-3.5 text-secondary-400" />
-                    <span className="text-xs font-medium text-secondary-500">{lang === "en" ? "Tags" : "标签"}</span>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {tags.map((tag: string, i: number) => (
-                      <span key={i} className="text-[11px] px-2.5 py-1 rounded-full bg-secondary-50 text-secondary-500 border border-secondary-100/50 font-medium">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Specifications */}
-            {specs.length > 0 && (
-              <div className="bg-white border border-secondary-100/50 rounded-2xl p-6 md:p-8 shadow-sm">
-                <h2 className="font-display font-semibold text-secondary-800 mb-4 text-sm flex items-center gap-2">
-                  <Database className="w-4 h-4 text-primary-500" />
-                  {t("products.detail.specs")}
-                </h2>
-                <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {specs.map((spec, i) => (
-                    <div key={i} className="bg-secondary-50/50 rounded-xl px-4 py-3">
-                      <dt className="text-[10px] font-mono text-secondary-400 uppercase tracking-wider mb-1">
-                        {lang === "en" ? spec.labelEn : spec.label}
-                      </dt>
-                      <dd className="text-sm font-medium text-secondary-700 break-words">{spec.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            )}
-
-            {/* Applications */}
-            {apps.length > 0 && (
-              <div className="bg-white border border-secondary-100/50 rounded-2xl p-6 md:p-8 shadow-sm">
-                <h2 className="font-display font-semibold text-secondary-800 mb-4 text-sm flex items-center gap-2">
-                  <Activity className="w-4 h-4 text-primary-500" />
-                  {t("products.detail.applications")}
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  {apps.map((a: string, i: number) => (
-                    <span key={i} className="text-xs bg-primary-50 text-primary-700 px-3 py-1.5 rounded-lg border border-primary-100/50 font-medium">
-                      {a}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Note */}
-            {product.note && product.note !== "nan" && (
-              <div className="bg-warm-50/30 border border-warm-100/50 rounded-2xl p-6 shadow-sm">
-                <h2 className="font-display font-semibold text-warm-800 mb-2 text-sm flex items-center gap-2">
-                  <FileText className="w-4 h-4 text-warm-500" />
-                  {lang === "en" ? "Notes" : "备注"}
-                </h2>
-                <p className="text-sm text-warm-700 leading-relaxed">{product.note}</p>
-              </div>
-            )}
-
-            {/* Related */}
-            {related.length > 0 && (
-              <div className="bg-white border border-secondary-100/50 rounded-2xl p-6 md:p-8 shadow-sm">
-                <h2 className="font-display font-semibold text-secondary-800 mb-4 text-sm">{t("products.detail.related")}</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {related.map(r => (
-                    <button
-                      key={r.id}
-                      onClick={() => router.push("/products/" + r.id)}
-                      className="text-left p-4 border border-secondary-100/50 rounded-xl hover:border-primary-200/50 hover:bg-primary-50/30 transition-all group"
-                    >
-                      <div className="text-[11px] font-mono font-semibold text-primary-600 mb-1">{r.id}</div>
-                      <div className="text-sm font-medium text-secondary-700 group-hover:text-primary-600 transition-colors">{fmtName(r)}</div>
-                      <div className="text-[11px] text-secondary-400 mt-1 line-clamp-1">{fmtDesc(r)}</div>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Sidebar */}
-          <div className="space-y-4">
-            {/* Quote CTA */}
-            <div className="bg-white border border-secondary-100/50 rounded-2xl p-6 shadow-sm">
-              <h2 className="font-display font-semibold text-secondary-800 mb-4 text-sm">{t("products.detail.quote")}</h2>
-              <p className="text-xs text-secondary-400 mb-4">{t("products.detail.quoteDesc")}</p>
-              <button onClick={() => router.push(`/contact?product=${encodeURIComponent(product.id)}&name=${encodeURIComponent(fmtName(product))}`)}
-                className="w-full flex items-center justify-center gap-2 bg-primary-500 text-white py-3 rounded-xl text-sm font-medium hover:bg-primary-600 transition-all shadow-sm hover:shadow-md">
-                <ExternalLink className="w-4 h-4" /> {t("products.detail.requestQuoteBtn")}
-              </button>
-              {product.listPrice && product.listPrice !== "nan" && product.listPrice !== "询价" && product.listPrice !== "下架" && (
-                <button onClick={() => router.push(`/quote?product=${encodeURIComponent(product.id)}`)}
-                  className="mt-2 w-full rounded-xl border border-primary-200 bg-primary-50 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-100">
-                  Instant price & PDF quote
-                </button>
-              )}
-              {/* Price hint */}
-              {product.listPrice && product.listPrice !== "nan" && product.listPrice !== "下架" && (
-                <div className="mt-4 pt-4 border-t border-secondary-100/50">
-                  <div className="text-[10px] font-mono text-secondary-400 uppercase tracking-wider mb-1">{lang === "en" ? "List Price" : "目录价"}</div>
-                  <div className="text-lg font-display font-bold text-primary-600">¥{product.listPrice}</div>
-                  {product.dailyPrice && product.dailyPrice !== "nan" && (
-                    <div className="text-xs text-secondary-400 mt-1">{lang === "en" ? "Daily Price" : "日询价"}: ¥{product.dailyPrice}</div>
-                  )}
-                </div>
-              )}
-            </div>
-
-            {/* Contact */}
-            <div className="bg-white border border-secondary-100/50 rounded-2xl p-6 shadow-sm">
-              <h2 className="font-display font-semibold text-secondary-800 mb-4 text-sm">{t("products.detail.contact")}</h2>
-              <div className="space-y-3">
-                <div className="flex items-start gap-2.5 text-xs text-secondary-400">
-                  <Mail className="w-3.5 h-3.5 text-primary-500 mt-0.5 shrink-0" />
-                  <div>
-                    <div className="text-secondary-600 font-medium">{t("products.detail.sales")}</div>
-                    sales@cobioer.com
-                  </div>
-                </div>
-                <div className="flex items-start gap-2.5 text-xs text-secondary-400">
-                  <Mail className="w-3.5 h-3.5 text-primary-500 mt-0.5 shrink-0" />
-                  <div>
-                    <div className="text-secondary-600 font-medium">{t("products.detail.technical")}</div>
-                    tech@cobioer.com
-                  </div>
-                </div>
-                <div className="flex items-start gap-2.5 text-xs text-secondary-400">
-                  <Phone className="w-3.5 h-3.5 text-primary-500 mt-0.5 shrink-0" />
-                  <div>
-                    <div className="text-secondary-600 font-medium">{t("products.detail.hotline")}</div>
-                    400-8750-250
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-2xl border border-secondary-100/50 bg-white p-6 text-xs leading-relaxed text-secondary-400 shadow-sm">
-              <a href={`/api/products/${encodeURIComponent(product.id)}/datasheet`} className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl border border-primary-200 bg-primary-50 px-4 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-100">
-                <FileDown className="h-4 w-4" /> Download product data sheet (PDF)
-              </a>
-              COA and batch-specific QC records are available on request after product and lot verification.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  return null;
 }
 
-function englishTitle(category: { title: string; titleEn: string }, lang: string) {
-  return lang !== "zh" && category.titleEn ? category.titleEn : category.title;
+export function generateMetadata({ params }: { params: { id: string } }): Metadata {
+  const found = findProduct(params.id);
+  if (!found) return { title: "Product Not Found", robots: { index: false, follow: true } };
+  const name = found.product.nameEn || found.product.name;
+  const description = (found.product.descriptionEn || found.product.description || `Technical information and quotation for ${found.product.id}.`).slice(0, 160);
+  return {
+    title: `${found.product.id} | ${name}`,
+    description,
+    alternates: { canonical: `/products/${encodeURIComponent(found.product.id)}` },
+    openGraph: { type: "website", title: `${found.product.id} | ${name}`, description, url: `/products/${encodeURIComponent(found.product.id)}` },
+  };
+}
+
+export default function ProductDetailPage({ params }: { params: { id: string } }) {
+  const found = findProduct(params.id);
+  if (!found) notFound();
+  return <ProductDetailClient product={found.product} related={found.related} category={found.category} />;
 }
