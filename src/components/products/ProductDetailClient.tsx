@@ -106,7 +106,7 @@ export default function ProductDetailClient({ product, related, category }: { pr
                 <div className="mt-5 pt-5 border-t border-secondary-100/50">
                   <div className="flex items-center gap-2 mb-3">
                     <Tag className="w-3.5 h-3.5 text-secondary-400" />
-                    <span className="text-xs font-medium text-secondary-500">{lang === "en" ? "Tags" : "标签"}</span>
+                    <span className="text-xs font-medium text-secondary-500">{t("products.detail.tags")}</span>
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {tags.map((tag: string, i: number) => (
@@ -130,7 +130,7 @@ export default function ProductDetailClient({ product, related, category }: { pr
                   {specs.map((spec, i) => (
                     <div key={i} className="bg-secondary-50/50 rounded-xl px-4 py-3">
                       <dt className="text-[10px] font-mono text-secondary-400 uppercase tracking-wider mb-1">
-                        {lang === "en" ? spec.labelEn : spec.label}
+                        {lang === "zh" ? spec.label : spec.labelEn}
                       </dt>
                       <dd className="text-sm font-medium text-secondary-700 break-words">{spec.value}</dd>
                     </div>
@@ -161,7 +161,7 @@ export default function ProductDetailClient({ product, related, category }: { pr
               <div className="bg-warm-50/30 border border-warm-100/50 rounded-2xl p-6 shadow-sm">
                 <h2 className="font-display font-semibold text-warm-800 mb-2 text-sm flex items-center gap-2">
                   <FileText className="w-4 h-4 text-warm-500" />
-                  {lang === "en" ? "Notes" : "备注"}
+                  {t("products.detail.notes")}
                 </h2>
                 <p className="text-sm text-warm-700 leading-relaxed">{product.note}</p>
               </div>
@@ -201,16 +201,16 @@ export default function ProductDetailClient({ product, related, category }: { pr
               {product.listPrice && product.listPrice !== "nan" && product.listPrice !== "询价" && product.listPrice !== "下架" && (
                 <button onClick={() => router.push(`/quote?product=${encodeURIComponent(product.id)}`)}
                   className="mt-2 w-full rounded-xl border border-primary-200 bg-primary-50 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-100">
-                  Instant price & PDF quote
+                  {t("products.detail.instantQuote")}
                 </button>
               )}
               {/* Price hint */}
               {product.listPrice && product.listPrice !== "nan" && product.listPrice !== "下架" && (
                 <div className="mt-4 pt-4 border-t border-secondary-100/50">
-                  <div className="text-[10px] font-mono text-secondary-400 uppercase tracking-wider mb-1">{lang === "en" ? "List Price" : "目录价"}</div>
+                  <div className="text-[10px] font-mono text-secondary-400 uppercase tracking-wider mb-1">{t("products.detail.listPrice")}</div>
                   <div className="text-lg font-display font-bold text-primary-600">¥{product.listPrice}</div>
                   {product.dailyPrice && product.dailyPrice !== "nan" && (
-                    <div className="text-xs text-secondary-400 mt-1">{lang === "en" ? "Daily Price" : "日询价"}: ¥{product.dailyPrice}</div>
+                    <div className="text-xs text-secondary-400 mt-1">{t("products.detail.dailyPrice")}: ¥{product.dailyPrice}</div>
                   )}
                 </div>
               )}
@@ -246,9 +246,9 @@ export default function ProductDetailClient({ product, related, category }: { pr
 
             <div className="rounded-2xl border border-secondary-100/50 bg-white p-6 text-xs leading-relaxed text-secondary-400 shadow-sm">
               <a href={`/api/products/${encodeURIComponent(product.id)}/datasheet`} className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl border border-primary-200 bg-primary-50 px-4 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-100">
-                <FileDown className="h-4 w-4" /> Download product data sheet (PDF)
+                <FileDown className="h-4 w-4" /> {t("products.detail.downloadDataSheet")}
               </a>
-              COA and batch-specific QC records are available on request after product and lot verification.
+              {t("products.detail.batchDocuments")}
             </div>
           </div>
         </div>

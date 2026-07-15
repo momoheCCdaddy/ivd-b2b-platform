@@ -7,13 +7,12 @@ import { useI18n } from "@/lib/i18n";
 type FormState = "idle" | "submitting" | "success" | "error";
 
 export default function InquiryForm({ productId = "", productName = "" }: { productId?: string; productName?: string }) {
-  const { lang, currency } = useI18n();
-  const zh = lang === "zh";
+  const { lang, currency, t } = useI18n();
   const [state, setState] = useState<FormState>("idle");
   const [feedback, setFeedback] = useState("");
   const initialMessage = useMemo(
-    () => productId ? (zh ? `我想了解 ${productId}${productName ? ` — ${productName}` : ""} 的价格、库存和交期。` : `I would like pricing, availability and lead-time information for ${productId}${productName ? ` — ${productName}` : ""}.`) : "",
-    [productId, productName, zh],
+    () => productId ? t("inquiry.initialMessage", { product: `${productId}${productName ? ` — ${productName}` : ""}` }) : "",
+    [productId, productName, t],
   );
 
   async function submit(event: FormEvent<HTMLFormElement>) {
@@ -43,7 +42,7 @@ export default function InquiryForm({ productId = "", productName = "" }: { prod
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || "Submission failed.");
       setState("success");
-      setFeedback(zh ? `询盘 ${result.inquiryNumber} 已收到，销售团队将在一个工作日内回复。` : `Inquiry ${result.inquiryNumber} received. Our sales team will reply within one business day.`);
+      setFeedback(t("inquiry.success", { number: result.inquiryNumber }));
       form.reset();
     } catch (error) {
       setState("error");
@@ -58,30 +57,30 @@ export default function InquiryForm({ productId = "", productName = "" }: { prod
       <input name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
       {productId && (
         <div className="rounded-xl border border-primary-100 bg-primary-50/70 p-4">
-          <p className="text-[11px] font-semibold uppercase tracking-wider text-primary-500">{zh ? "已选产品" : "Selected product"}</p>
+          <p className="text-[11px] font-semibold uppercase tracking-wider text-primary-500">{t("inquiry.selectedProduct")}</p>
           <p className="mt-1 font-mono text-sm font-semibold text-primary-800">{productId}</p>
           {productName && <p className="mt-1 text-sm text-secondary-600">{productName}</p>}
         </div>
       )}
       <div className="grid gap-5 sm:grid-cols-2">
-        <label className="text-sm font-medium text-secondary-700">{zh ? "姓名" : "Full name"} *<input required name="fullName" autoComplete="name" className={`${fieldClass} mt-2`} /></label>
-        <label className="text-sm font-medium text-secondary-700">{zh ? "商务邮箱" : "Business email"} *<input required type="email" name="email" autoComplete="email" className={`${fieldClass} mt-2`} /></label>
-        <label className="text-sm font-medium text-secondary-700">{zh ? "公司／机构" : "Company / institution"}<input name="company" autoComplete="organization" className={`${fieldClass} mt-2`} /></label>
-        <label className="text-sm font-medium text-secondary-700">{zh ? "国家／地区" : "Country / region"}<input name="country" autoComplete="country-name" className={`${fieldClass} mt-2`} /></label>
-        <label className="text-sm font-medium text-secondary-700">{zh ? "电话" : "Phone"}<input name="phone" autoComplete="tel" className={`${fieldClass} mt-2`} /></label>
-        <label className="text-sm font-medium text-secondary-700">{zh ? "数量" : "Quantity"}<input name="quantity" type="number" min="1" max="100000" defaultValue="1" className={`${fieldClass} mt-2`} /></label>
-        <label className="text-sm font-medium text-secondary-700">{zh ? "咨询类型" : "Inquiry type"}<select name="inquiryType" className={`${fieldClass} mt-2`} defaultValue={productId ? "product" : "general"}><option value="product">{zh ? "产品与库存" : "Product & availability"}</option><option value="custom">{zh ? "定制开发" : "Custom development"}</option><option value="distribution">{zh ? "经销合作" : "Distribution partnership"}</option><option value="technical">{zh ? "技术支持" : "Technical support"}</option><option value="general">{zh ? "一般咨询" : "General inquiry"}</option></select></label>
-        <label className="text-sm font-medium text-secondary-700">{zh ? "首选币种" : "Preferred currency"}<select key={currency} name="currency" className={`${fieldClass} mt-2`} defaultValue={currency}><option value="USD">USD — {zh ? "美元" : "US Dollar"}</option><option value="EUR">EUR — {zh ? "欧元" : "Euro"}</option><option value="CNY">CNY — {zh ? "人民币" : "Chinese Yuan"}</option></select></label>
+        <label className="text-sm font-medium text-secondary-700">{t("inquiry.fullName")} *<input required name="fullName" autoComplete="name" className={`${fieldClass} mt-2`} /></label>
+        <label className="text-sm font-medium text-secondary-700">{t("inquiry.businessEmail")} *<input required type="email" name="email" autoComplete="email" className={`${fieldClass} mt-2`} /></label>
+        <label className="text-sm font-medium text-secondary-700">{t("inquiry.company")}<input name="company" autoComplete="organization" className={`${fieldClass} mt-2`} /></label>
+        <label className="text-sm font-medium text-secondary-700">{t("inquiry.country")}<input name="country" autoComplete="country-name" className={`${fieldClass} mt-2`} /></label>
+        <label className="text-sm font-medium text-secondary-700">{t("inquiry.phone")}<input name="phone" autoComplete="tel" className={`${fieldClass} mt-2`} /></label>
+        <label className="text-sm font-medium text-secondary-700">{t("inquiry.quantity")}<input name="quantity" type="number" min="1" max="100000" defaultValue="1" className={`${fieldClass} mt-2`} /></label>
+        <label className="text-sm font-medium text-secondary-700">{t("inquiry.type")}<select name="inquiryType" className={`${fieldClass} mt-2`} defaultValue={productId ? "product" : "general"}><option value="product">{t("inquiry.productAvailability")}</option><option value="custom">{t("inquiry.customDevelopment")}</option><option value="distribution">{t("inquiry.distribution")}</option><option value="technical">{t("inquiry.technical")}</option><option value="general">{t("inquiry.general")}</option></select></label>
+        <label className="text-sm font-medium text-secondary-700">{t("inquiry.preferredCurrency")}<select key={currency} name="currency" className={`${fieldClass} mt-2`} defaultValue={currency}><option value="USD">USD — {t("inquiry.usd")}</option><option value="EUR">EUR — {t("inquiry.eur")}</option><option value="CNY">CNY — {t("inquiry.cny")}</option></select></label>
       </div>
-      <label className="block text-sm font-medium text-secondary-700">{zh ? "需求说明" : "Requirements"} *<textarea required name="message" rows={6} defaultValue={initialMessage} className={`${fieldClass} mt-2 resize-y`} placeholder={zh ? "请说明应用、目标数量、目的地和期望交付日期。" : "Tell us your application, target quantity, destination and required delivery date."} /></label>
-      <label className="flex items-start gap-3 text-xs leading-relaxed text-secondary-500"><input required name="consentPrivacy" type="checkbox" className="mt-0.5 h-4 w-4 rounded border-secondary-300 text-primary-600" /><span>{zh ? "我同意" : "I agree to the"} <a href="/privacy" className="font-medium text-primary-600 hover:underline">{zh ? "隐私政策" : "Privacy Policy"}</a> {zh ? "并同意为回复本询盘而处理我的数据。" : "and consent to processing my data to respond to this inquiry."} *</span></label>
-      <label className="flex items-start gap-3 text-xs leading-relaxed text-secondary-500"><input name="consentMarketing" type="checkbox" className="mt-0.5 h-4 w-4 rounded border-secondary-300 text-primary-600" /><span>{zh ? "我愿意接收相关产品和技术更新（可选）。" : "I would like to receive relevant product and technical updates. Optional."}</span></label>
+      <label className="block text-sm font-medium text-secondary-700">{t("inquiry.requirements")} *<textarea required name="message" rows={6} defaultValue={initialMessage} className={`${fieldClass} mt-2 resize-y`} placeholder={t("inquiry.requirementsPlaceholder")} /></label>
+      <label className="flex items-start gap-3 text-xs leading-relaxed text-secondary-500"><input required name="consentPrivacy" type="checkbox" className="mt-0.5 h-4 w-4 rounded border-secondary-300 text-primary-600" /><span>{t("inquiry.agreeTo")} <a href="/privacy" className="font-medium text-primary-600 hover:underline">{t("inquiry.privacyPolicy")}</a> {t("inquiry.consent")} *</span></label>
+      <label className="flex items-start gap-3 text-xs leading-relaxed text-secondary-500"><input name="consentMarketing" type="checkbox" className="mt-0.5 h-4 w-4 rounded border-secondary-300 text-primary-600" /><span>{t("inquiry.marketing")}</span></label>
       {feedback && <div role="status" className={`rounded-xl border p-4 text-sm ${state === "success" ? "border-emerald-200 bg-emerald-50 text-emerald-800" : "border-red-200 bg-red-50 text-red-700"}`}>{state === "success" && <CheckCircle2 className="mr-2 inline h-4 w-4" />}{feedback}</div>}
       <button disabled={state === "submitting"} className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-700 disabled:cursor-not-allowed disabled:opacity-60">
         {state === "submitting" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
-        {state === "submitting" ? (zh ? "提交中…" : "Submitting…") : (zh ? "提交询盘" : "Submit inquiry")}
+        {state === "submitting" ? t("inquiry.submitting") : t("inquiry.submit")}
       </button>
-      <p className="text-center text-xs text-secondary-400">{zh ? "通常在一个工作日内回复。" : "Typical response time: within one business day."}</p>
+      <p className="text-center text-xs text-secondary-400">{t("inquiry.responseTime")}</p>
     </form>
   );
 }

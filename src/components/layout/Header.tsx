@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useI18n } from '@/lib/i18n';
 import Link from 'next/link';
 import { Menu, X, ChevronDown, FlaskConical, Globe2 } from 'lucide-react';
-import type { Currency, Lang } from '@/lib/i18n';
+import { LANGUAGES, type Currency, type Lang } from '@/lib/i18n';
 
 interface NavChild {
   labelKey: string;
@@ -130,7 +130,7 @@ export default function Header() {
             <div className="flex items-center rounded-lg border border-secondary-200/60 bg-white px-2 text-secondary-500">
               <Globe2 className="h-3.5 w-3.5" />
               <select aria-label="Language" value={lang} onChange={event => setLang(event.target.value as Lang)} className="bg-transparent px-1.5 py-2 text-xs font-semibold outline-none">
-                <option value="en">EN</option><option value="zh">中文</option><option value="ar">العربية</option>
+                {LANGUAGES.map(language => <option key={language.code} value={language.code}>{language.shortLabel}</option>)}
               </select>
             </div>
             <select aria-label="Currency" value={currency} onChange={event => setCurrency(event.target.value as Currency)} className="rounded-lg border border-secondary-200/60 bg-white px-2 py-2 text-xs font-semibold text-secondary-500 outline-none">
@@ -185,7 +185,7 @@ export default function Header() {
             ))}
             <div className="pt-3 mt-2 border-t border-secondary-100/30">
               <div className="mb-3 grid grid-cols-2 gap-2">
-                <select aria-label="Language" value={lang} onChange={event => setLang(event.target.value as Lang)} className="rounded-lg border border-secondary-200 bg-white px-3 py-2.5 text-sm"><option value="en">English</option><option value="zh">中文</option><option value="ar">العربية</option></select>
+                <select aria-label="Language" value={lang} onChange={event => setLang(event.target.value as Lang)} className="rounded-lg border border-secondary-200 bg-white px-3 py-2.5 text-sm">{LANGUAGES.map(language => <option key={language.code} value={language.code}>{language.label}</option>)}</select>
                 <select aria-label="Currency" value={currency} onChange={event => setCurrency(event.target.value as Currency)} className="rounded-lg border border-secondary-200 bg-white px-3 py-2.5 text-sm"><option value="USD">USD</option><option value="EUR">EUR</option><option value="CNY">CNY</option></select>
               </div>
               <Link href="/contact" onClick={() => setMobileOpen(false)}
