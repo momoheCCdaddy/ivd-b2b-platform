@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import { productCategories } from "@/data/products";
+import { getCategoryOverrides } from "@/lib/catalog-overrides";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -20,8 +21,10 @@ function findProduct(id: string) {
 
 export async function GET(_request: NextRequest, { params }: { params: { id: string } }) {
   const found = findProduct(params.id);
-  if (!found) return NextResponse.json({ error: "Product not found." }, { status: 404 });
+  const overrides = new Map((await getCategoryOverrides()).map(item => [item.category_id, item]));
+  if (!found || overrides.get(found.category.id)?.visible === false) return NextResponse.json({ error: "Product not found." }, { status: 404 });
   const { product, category, subcategory } = found;
+  const categoryTitle = overrides.get(category.id)?.title_en || category.titleEn || category.title;
   const pdf = await PDFDocument.create();
   const page = pdf.addPage([595.28, 841.89]);
   const regular = await pdf.embedFont(StandardFonts.Helvetica);
@@ -34,7 +37,7 @@ export async function GET(_request: NextRequest, { params }: { params: { id: str
 
   const name = latin(product.nameEn || product.name, 95) || latin(product.id);
   page.drawText(name, { x: 42, y: 714, size: 18, font: bold, color: navy, maxWidth: 510 });
-  page.drawText(latin(category.titleEn || category.title), { x: 42, y: 692, size: 10, font: bold, color: blue });
+  page.drawText(latin(categoryTitle), { x: 42, y: 692, size: 10, font: bold, color: blue });
   page.drawText(latin(subcategory.nameEn || subcategory.name), { x: 42, y: 677, size: 9, font: regular, color: gray });
 
   let y = 635;
@@ -62,4 +65,3 @@ export async function GET(_request: NextRequest, { params }: { params: { id: str
   const bytes = await pdf.save();
   return new NextResponse(Buffer.from(bytes), { headers: { "Content-Type": "application/pdf", "Content-Disposition": `attachment; filename="Cobioer-${latin(product.id)}-Data-Sheet.pdf"`, "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800" } });
 }
-
