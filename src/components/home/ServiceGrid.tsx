@@ -1,73 +1,11 @@
-'use client';
-
-import Link from 'next/link';
-import { Dna, Crosshair, Activity, Factory, ArrowRight } from 'lucide-react';
-import Button from '@/components/ui/Button';
-
-const serviceItems = [
-  {
-    icon: Dna,
-    title: '细胞工程',
-    desc: '稳定细胞株构建、CRISPR基因编辑、病毒包装 — 多技术平台覆盖各类细胞工程化需求',
-    href: '/services#cell-engineering',
-  },
-  {
-    icon: Crosshair,
-    title: '靶点模型开发',
-    desc: 'GPCR/激酶/免疫治疗/ADC/PROTAC — 覆盖主流和小众靶点的筛选验证模型开发',
-    href: '/services#target-dev',
-  },
-  {
-    icon: Activity,
-    title: '药效评价',
-    desc: '从体外细胞学评价到体内动物模型 — 完整的临床前药效学研究服务体系',
-    href: '/services#efficacy',
-  },
-  {
-    icon: Factory,
-    title: 'CDMO服务',
-    desc: '工艺开发、委托生产、注册支持 — 加速IVD产品从概念到上市的全过程',
-    href: '/services#cdmo',
-  },
+"use client";
+import Link from "next/link";
+import { Activity, ArrowRight, Crosshair, Dna, Factory } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
+const services = [
+  { icon: Dna, en: "Cell engineering", zh: "细胞工程", enDesc: "Stable cell lines, gene editing and reporter assay development with documented clone selection.", zhDesc: "稳定细胞株、基因编辑和报告基因检测开发，并提供克隆筛选记录。", href: "/services#platforms" },
+  { icon: Crosshair, en: "Target model development", zh: "靶点模型开发", enDesc: "GPCR, kinase, immune and pathway models optimized for screening and validation.", zhDesc: "面向筛选与验证优化的GPCR、激酶、免疫和通路模型。", href: "/services#platforms" },
+  { icon: Activity, en: "Efficacy evaluation", zh: "药效评价", enDesc: "Cell-based dose response, mechanism studies and custom efficacy panels.", zhDesc: "细胞剂量反应、机制研究和定制药效面板。", href: "/services#platforms" },
+  { icon: Factory, en: "IVD CDMO", zh: "IVD CDMO", enDesc: "Raw-material selection, assay transfer, pilot production and controlled scale-up.", zhDesc: "原料筛选、检测转移、中试生产和受控放大。", href: "/services#platforms" },
 ];
-
-export default function ServiceGrid() {
-  return (
-    <section className="section-padding bg-white">
-      <div className="container-page">
-        <div className="text-center mb-12">
-          <h2 className="heading-2 mb-4">技术服务</h2>
-          <p className="body-text max-w-2xl mx-auto">
-            四大技术服务平台，为药物研发和IVD开发提供从早期发现到产业化的全流程技术支持
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {serviceItems.map((item) => (
-            <Link
-              key={item.title}
-              href={item.href}
-              className="group flex gap-5 p-6 rounded-xl border border-neutral-100 hover:border-primary-100 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 bg-white"
-            >
-              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-50 flex items-center justify-center group-hover:bg-primary-100 transition-colors">
-                <item.icon className="w-6 h-6 text-primary-500" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-lg font-semibold text-neutral-800 mb-2 group-hover:text-primary-500 transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-neutral-500 leading-relaxed">{item.desc}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        <div className="text-center mt-10">
-          <Button variant="outline" size="lg" href="/services">
-            查看全部服务 <ArrowRight className="ml-2 w-4 h-4" />
-          </Button>
-        </div>
-      </div>
-    </section>
-  );
-}
+export default function ServiceGrid() { const { lang } = useI18n(); const en = lang !== "zh"; return <section className="section-padding bg-white"><div className="container-page"><div className="mb-12 text-center"><h2 className="heading-2 mb-4">{en ? "Technical services that move programs forward" : "推动项目进展的技术服务"}</h2><p className="body-text mx-auto max-w-2xl">{en ? "Integrated support from model construction and assay validation to diagnostic scale-up." : "从模型构建和检测验证到诊断规模化的一体化支持。"}</p></div><div className="grid gap-6 md:grid-cols-2">{services.map(item => <Link key={item.en} href={item.href} className="group flex gap-5 rounded-xl border border-neutral-100 bg-white p-6 transition hover:-translate-y-0.5 hover:border-primary-100 hover:shadow-md"><div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary-50"><item.icon className="h-6 w-6 text-primary-500" /></div><div><h3 className="text-lg font-semibold text-neutral-800 group-hover:text-primary-500">{en ? item.en : item.zh}</h3><p className="mt-2 text-sm leading-relaxed text-neutral-500">{en ? item.enDesc : item.zhDesc}</p></div></Link>)}</div><div className="mt-10 text-center"><Link href="/services" className="inline-flex items-center gap-2 rounded-xl border border-primary-200 px-6 py-3 text-sm font-semibold text-primary-600 hover:bg-primary-50">{en ? "Explore all services" : "查看全部服务"}<ArrowRight className="h-4 w-4" /></Link></div></div></section>; }

@@ -1,0 +1,19 @@
+"use client";
+
+import Link from "next/link";
+import { ArrowRight, CheckCircle2, Dna, FileCheck2, FlaskConical, Globe2, Microscope, ShieldCheck } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
+import { siteContent } from "@/data/site-content";
+
+const icons = [Dna, FlaskConical, ShieldCheck, Microscope, Globe2, FileCheck2];
+
+export default function LocalizedContentPage({ page }: { page: keyof typeof siteContent }) {
+  const { lang } = useI18n(); const content = siteContent[page]; const locale = lang === "zh" ? "zh" : "en";
+  const value = (text: { en: string; zh: string }) => text[locale];
+
+  return <div className="min-h-screen bg-white pt-20">
+    <section className="relative overflow-hidden border-b border-secondary-100 bg-secondary-950 py-20 text-white"><div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_25%,rgba(20,152,184,.22),transparent_38%)]" /><div className="container-page relative"><div className="max-w-3xl"><p className="text-xs font-semibold tracking-[0.22em] text-primary-300">{value(content.eyebrow)}</p><h1 className="mt-5 font-display text-4xl font-bold leading-tight md:text-6xl">{value(content.title)}</h1><p className="mt-6 max-w-2xl text-base leading-relaxed text-secondary-200 md:text-lg">{value(content.description)}</p></div></div></section>
+    {content.sections.map((section, sectionIndex) => <section key={section.id} id={section.id} className={`section-padding ${sectionIndex % 2 ? "bg-secondary-50" : "bg-white"}`}><div className="container-page"><div className="mb-10 max-w-3xl"><p className="text-xs font-semibold tracking-[0.18em] text-primary-600">{String(sectionIndex + 1).padStart(2, "0")}</p><h2 className="mt-2 font-display text-3xl font-bold text-secondary-900">{value(section.title)}</h2>{section.description && <p className="mt-4 leading-relaxed text-secondary-500">{value(section.description)}</p>}</div><div className={`grid gap-5 ${section.cards.length === 3 ? "md:grid-cols-3" : "md:grid-cols-2 lg:grid-cols-4"}`}>{section.cards.map((card, index) => { const Icon = icons[(sectionIndex + index) % icons.length]; return <article key={value(card.title)} className="group rounded-2xl border border-secondary-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg"><div className="mb-5 flex items-start justify-between gap-3"><div className="rounded-xl bg-primary-50 p-3 text-primary-600 transition group-hover:bg-primary-600 group-hover:text-white"><Icon className="h-5 w-5" /></div>{card.badge && <span className="rounded-full bg-secondary-50 px-2.5 py-1 text-[10px] font-bold tracking-wide text-secondary-500">{value(card.badge)}</span>}</div><h3 className="font-display text-lg font-bold text-secondary-900">{value(card.title)}</h3><p className="mt-3 text-sm leading-relaxed text-secondary-500">{value(card.description)}</p>{card.bullets && <ul className="mt-5 space-y-2 border-t border-secondary-100 pt-4">{card.bullets.map(bullet => <li key={value(bullet)} className="flex items-start gap-2 text-xs text-secondary-600"><CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-500" />{value(bullet)}</li>)}</ul>}</article>; })}</div></div></section>)}
+    {content.cta && <section className="bg-primary-700 py-16 text-white"><div className="container-page flex flex-col justify-between gap-8 md:flex-row md:items-center"><div className="max-w-2xl"><h2 className="font-display text-3xl font-bold">{value(content.cta.title)}</h2><p className="mt-3 leading-relaxed text-primary-100">{value(content.cta.description)}</p></div><Link href={content.cta.href} className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-primary-700 shadow-lg transition hover:bg-primary-50">{value(content.cta.label)}<ArrowRight className="h-4 w-4" /></Link></div></section>}
+  </div>;
+}

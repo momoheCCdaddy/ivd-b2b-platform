@@ -1,93 +1,10 @@
-import Link from 'next/link';
-import { ArrowRight, Calendar, Tag } from 'lucide-react';
-import { newsItems, techArticles } from '@/data/news';
-import Badge from '@/components/ui/Badge';
-import Button from '@/components/ui/Button';
-
-const categoryLabels: Record<string, string> = {
-  company: '公司动态',
-  product: '产品发布',
-  event: '活动',
-  industry: '行业资讯',
-};
-
-export default function NewsSection() {
-  const latestNews = newsItems.slice(0, 3);
-  const latestTech = techArticles.slice(0, 3);
-
-  return (
-    <section className="section-padding bg-white">
-      <div className="container-page">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* News Column */}
-          <div>
-            <div className="flex items-center justify-between mb-8">
-              <h2 className="heading-2">新闻动态</h2>
-              <Link
-                href="/news"
-                className="text-sm text-primary-500 hover:text-primary-600 font-medium inline-flex items-center gap-1"
-              >
-                全部新闻 <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-            <div className="space-y-4">
-              {latestNews.map((item) => (
-                <Link
-                  key={item.id}
-                  href={`/news/${item.slug}`}
-                  className="block group p-4 rounded-xl hover:bg-neutral-50 transition-colors"
-                >
-                  <div className="flex items-center gap-3 mb-2">
-                    <Badge variant="primary">{categoryLabels[item.category] || item.category}</Badge>
-                    <span className="text-xs text-neutral-400 flex items-center gap-1">
-                      <Calendar className="w-3 h-3" />
-                      {item.date}
-                    </span>
-                  </div>
-                  <h3 className="text-base font-semibold text-neutral-800 mb-1 group-hover:text-primary-500 transition-colors line-clamp-1">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-neutral-500 line-clamp-2">{item.summary}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Tech Articles Column */}
-          <div>
-            <div className="flex items-center justify-between mb-8">
-              <h2 className="heading-2">技术文章</h2>
-              <Link
-                href="/tech-center"
-                className="text-sm text-primary-500 hover:text-primary-600 font-medium inline-flex items-center gap-1"
-              >
-                全部文章 <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-            <div className="space-y-4">
-              {latestTech.map((article) => (
-                <Link
-                  key={article.id}
-                  href={`/tech-center/${article.slug}`}
-                  className="block group p-4 rounded-xl hover:bg-neutral-50 transition-colors"
-                >
-                  <div className="flex items-center gap-3 mb-2">
-                    <Badge variant="accent">{article.category}</Badge>
-                    <span className="text-xs text-neutral-400 flex items-center gap-1">
-                      <Calendar className="w-3 h-3" />
-                      {article.date}
-                    </span>
-                  </div>
-                  <h3 className="text-base font-semibold text-neutral-800 mb-1 group-hover:text-primary-500 transition-colors line-clamp-1">
-                    {article.title}
-                  </h3>
-                  <p className="text-sm text-neutral-500 line-clamp-2">{article.summary}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+"use client";
+import Link from "next/link";
+import { ArrowRight, BookOpen, Database, FileText } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
+const updates = [
+  { icon: Database, en: "6,800+ products now searchable", zh: "6800多条产品可检索", enDesc: "Exact catalog ID ranking, server-side filters and fast pagination across the complete catalog.", zhDesc: "完整目录支持精确货号排序、服务器筛选和快速分页。", href: "/products" },
+  { icon: FileText, en: "International quotation workflow", zh: "国际报价流程", enDesc: "Structured inquiries and configurable catalog quotations for global purchasing teams.", zhDesc: "面向全球采购团队的结构化询盘和可配置目录报价。", href: "/quote" },
+  { icon: BookOpen, en: "Practical technical resources", zh: "实用技术资源", enDesc: "Guidance for cell handling, assay selection and diagnostic reference material planning.", zhDesc: "关于细胞操作、检测选择和诊断标准品规划的指南。", href: "/tech-center" },
+];
+export default function NewsSection() { const { lang } = useI18n(); const en = lang !== "zh"; return <section className="section-padding bg-white"><div className="container-page"><div className="mb-10 flex items-end justify-between gap-4"><div><p className="text-xs font-semibold tracking-[0.18em] text-primary-600">{en ? "PLATFORM UPDATES" : "平台动态"}</p><h2 className="heading-2 mt-2">{en ? "New ways to work with us" : "与我们合作的新方式"}</h2></div><Link href="/news" className="hidden items-center gap-1 text-sm font-semibold text-primary-600 sm:flex">{en ? "All updates" : "全部动态"}<ArrowRight className="h-4 w-4" /></Link></div><div className="grid gap-5 md:grid-cols-3">{updates.map(item => <Link href={item.href} key={item.en} className="group rounded-2xl border border-secondary-100 p-6 transition hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg"><item.icon className="h-6 w-6 text-primary-600" /><h3 className="mt-5 font-display text-lg font-bold text-secondary-900 group-hover:text-primary-600">{en ? item.en : item.zh}</h3><p className="mt-3 text-sm leading-relaxed text-secondary-500">{en ? item.enDesc : item.zhDesc}</p><span className="mt-5 inline-flex items-center gap-1 text-xs font-semibold text-primary-600">{en ? "Learn more" : "了解更多"}<ArrowRight className="h-3 w-3" /></span></Link>)}</div></div></section>; }
