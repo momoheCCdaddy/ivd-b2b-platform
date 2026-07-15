@@ -21,10 +21,10 @@ export async function POST(request: NextRequest) {
   }
 
   let calculated;
-  try { calculated = calculateQuote(productId, Number(body.quantity), clean(body.currency, 3)); }
+  try { calculated = await calculateQuote(productId, Number(body.quantity), clean(body.currency, 3)); }
   catch (error) {
     const code = error instanceof Error ? error.message : "QUOTE_ERROR";
-    return NextResponse.json({ error: code === "PRICE_NOT_AVAILABLE" ? "This product requires a manual quotation." : code === "FX_RATE_NOT_CONFIGURED" ? "The selected currency is not configured." : "Unable to calculate this quote." }, { status: code === "PRODUCT_NOT_FOUND" ? 404 : 422 });
+    return NextResponse.json({ error: code === "PRICE_NOT_AVAILABLE" ? "This product requires a manual quotation." : code === "FX_RATE_UNAVAILABLE" ? "The selected currency is temporarily unavailable." : "Unable to calculate this quote." }, { status: code === "PRODUCT_NOT_FOUND" ? 404 : code === "FX_RATE_UNAVAILABLE" ? 503 : 422 });
   }
 
   const quoteNumber = `QT-${new Date().toISOString().slice(0, 10).replace(/-/g, "")}-${crypto.randomUUID().slice(0, 8).toUpperCase()}`;
@@ -62,4 +62,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Unable to save this quote. Please request a manual quotation." }, { status: 502 });
   }
 }
-
