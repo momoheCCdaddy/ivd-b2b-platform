@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ChevronRight, ArrowLeft, FileText, FlaskConical, Mail, Phone, ExternalLink, Tag, Activity, Database, Loader2 } from "lucide-react";
+import { ChevronRight, ArrowLeft, FileText, FlaskConical, Mail, Phone, ExternalLink, Tag, Activity, Database, Loader2, FileDown } from "lucide-react";
 import type { ProductItem } from "@/data/products";
 import { useI18n } from "@/lib/i18n";
 
@@ -279,7 +279,10 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             </div>
 
             <div className="rounded-2xl border border-secondary-100/50 bg-white p-6 text-xs leading-relaxed text-secondary-400 shadow-sm">
-              Product documentation, COA and batch-specific QC records are available on request and supplied after product and lot verification.
+              <a href={`/api/products/${encodeURIComponent(product.id)}/datasheet`} className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl border border-primary-200 bg-primary-50 px-4 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-100">
+                <FileDown className="h-4 w-4" /> Download product data sheet (PDF)
+              </a>
+              COA and batch-specific QC records are available on request after product and lot verification.
             </div>
           </div>
         </div>
