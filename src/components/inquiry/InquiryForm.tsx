@@ -1,20 +1,16 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { CheckCircle2, Loader2, Send } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
-export default function InquiryForm() {
-  const params = useSearchParams();
+export default function InquiryForm({ productId = "", productName = "" }: { productId?: string; productName?: string }) {
   const { lang, currency } = useI18n();
   const zh = lang === "zh";
   const [state, setState] = useState<FormState>("idle");
   const [feedback, setFeedback] = useState("");
-  const productId = params.get("product") || "";
-  const productName = params.get("name") || "";
   const initialMessage = useMemo(
     () => productId ? (zh ? `我想了解 ${productId}${productName ? ` — ${productName}` : ""} 的价格、库存和交期。` : `I would like pricing, availability and lead-time information for ${productId}${productName ? ` — ${productName}` : ""}.`) : "",
     [productId, productName, zh],
