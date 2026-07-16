@@ -17,7 +17,7 @@ function ProductCard({ category }: { category: CatalogSummary }) {
   const { lang, t } = useI18n();
   const english = lang !== 'zh';
   return (
-    <Link href={`/products#${category.id}`} className="group block">
+    <Link href={`/products?category=${encodeURIComponent(category.id)}`} className="group block">
       <div className="bg-white rounded-xl p-6 border border-neutral-100 h-full hover-lift">
         <div className="w-12 h-12 rounded-lg bg-primary-50 flex items-center justify-center text-2xl mb-4 group-hover:bg-primary-100 transition-colors">
           {iconMap[category.icon] || '🔬'}
