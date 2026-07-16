@@ -20,7 +20,7 @@ export const siteContent: Record<string, PageContent> = {
         { title: b("Long-term partnership", "长期合作"), description: b("Responsive communication, transparent lead times and reliable after-sales support are part of every engagement.", "快速沟通、透明交期和可靠售后是每次合作的基本组成。") },
       ]},
       { id: "history", title: b("Capabilities at a glance", "核心能力概览"), cards: [
-        { title: b("6,800+", "6,800+"), description: b("Catalog products across research and diagnostics.", "覆盖科研与诊断领域的目录产品。") },
+        { title: b("7,000+", "7,000+"), description: b("Catalog products across research and diagnostics.", "覆盖科研与诊断领域的目录产品。") },
         { title: b("ISO-oriented quality", "ISO导向质量体系"), description: b("Controlled workflows for identity, contamination and performance testing.", "针对身份、污染和性能检测的受控流程。") },
         { title: b("Global response", "全球响应"), description: b("English-first commercial support with multilingual and regional routing.", "英文优先的商务支持，并提供多语言和区域分配。") },
       ]},
@@ -77,7 +77,7 @@ export const siteContent: Record<string, PageContent> = {
     eyebrow: b("INSIGHTS & UPDATES", "洞察与动态"), title: b("Scientific and company updates", "科学与公司动态"), description: b("New products, technical resources and events from the Cobioer team.", "来自科佰团队的新产品、技术资源与活动信息。"),
     sections: [{ id: "updates", title: b("Latest updates", "最新动态"), cards: [
       { title: b("Expanded molecular diagnostic reference catalog", "分子诊断标准品目录扩展"), description: b("Additional oncology, pathogen, methylation and pharmacogenomic materials are now searchable in the product center.", "更多肿瘤、病原体、甲基化和用药指导材料现已可在产品中心检索。"), badge: b("PRODUCT", "产品") },
-      { title: b("A faster way to identify target models", "更快速地查找靶点模型"), description: b("Server-side catalog search now prioritizes exact catalog IDs and returns paginated results across 6,800+ products.", "服务器端目录搜索现在优先匹配精确货号，并在6800多条产品中分页返回结果。"), badge: b("PLATFORM", "平台") },
+      { title: b("A faster way to identify target models", "更快速地查找靶点模型"), description: b("Server-side catalog search now prioritizes exact catalog IDs and returns paginated results across 7,000+ products.", "服务器端目录搜索现在优先匹配精确货号，并在 7,000+ 产品中分页返回结果。"), badge: b("PLATFORM", "平台") },
       { title: b("International quotation workflow launched", "国际报价流程上线"), description: b("Global customers can submit structured inquiries and prepare indicative catalog quotations in supported currencies.", "全球客户可提交结构化询盘，并使用支持的币种生成目录参考报价。"), badge: b("SERVICE", "服务") },
     ]}], cta: { title: b("Looking for a specific update?", "寻找特定信息？"), description: b("Ask our team about new products, availability or upcoming technical materials.", "向团队咨询新产品、库存或即将发布的技术资料。"), label: b("Contact us", "联系我们"), href: "/contact" },
   },

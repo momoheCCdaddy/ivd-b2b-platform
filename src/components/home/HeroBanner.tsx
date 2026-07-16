@@ -59,7 +59,7 @@ export default function HeroBanner() {
           <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl">
             <div className="space-y-6">
               <div>
-                <div className="stat-number text-signal-300">3000+</div>
+                <div className="stat-number text-signal-300">7,000+</div>
                 <div className="text-sm text-primary-200">{t("home.stats.products")}</div>
               </div>
               <div className="border-t border-white/10" />

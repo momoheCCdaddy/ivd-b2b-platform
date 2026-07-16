@@ -10,11 +10,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ivd-b2b-platform.ve
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Cobioer | 药物靶点模型 & 诊断标准品',
+    default: 'Cobioer BioSciences | IVD Reference Materials & Cell Models',
     template: '%s | Cobioer BioSciences',
   },
   description:
-    '南京科佰生物科技有限公司 — 领先的药物靶点模型与分子诊断标准品供应商，3000+产品，ISO13485认证，服务30+国家。',
+    'Explore 7,000+ authenticated cell models, molecular diagnostic reference materials and IVD development solutions for global laboratories and manufacturers.',
   keywords: ['IVD products', 'diagnostic reference materials', 'drug target cell models', 'molecular diagnostics', 'IVD quality control', 'CDMO', 'GPCR cell lines', 'Cobioer'],
   alternates: { canonical: '/' },
   openGraph: {
@@ -22,9 +22,10 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: 'Cobioer BioSciences',
     title: 'Cobioer BioSciences | IVD Products & Drug Target Models',
-    description: 'IVD reference materials, research cell lines and drug target models for global laboratories and diagnostic manufacturers.',
+    description: '7,000+ IVD reference materials, research cell lines and drug target models for global laboratories and diagnostic manufacturers.',
+    locale: 'en_US',
   },
-  twitter: { card: 'summary_large_image', title: 'Cobioer BioSciences', description: 'IVD products, diagnostic standards and drug target models for global customers.' },
+  twitter: { card: 'summary_large_image', title: 'Cobioer BioSciences', description: 'IVD products, diagnostic reference materials and drug target models for global customers.' },
 };
 
 export default function RootLayout({
@@ -38,9 +39,11 @@ export default function RootLayout({
     name: 'Cobioer BioSciences',
     alternateName: '南京科佰生物科技有限公司',
     url: siteUrl,
+    description: 'Authenticated cell models, diagnostic reference materials and integrated IVD development solutions for global life-science customers.',
     email: 'sales@cobioer.com',
     telephone: '400-8750-250',
     address: { '@type': 'PostalAddress', addressLocality: 'Nanjing', addressCountry: 'CN' },
+    contactPoint: { '@type': 'ContactPoint', contactType: 'sales', email: 'sales@cobioer.com', availableLanguage: ['English', 'Chinese'] },
   };
   return (
     <html lang="en">

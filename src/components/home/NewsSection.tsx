@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, Database, FileText } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 const updates = [
-  { icon: Database, en: "6,800+ products now searchable", zh: "6800多条产品可检索", enDesc: "Exact catalog ID ranking, server-side filters and fast pagination across the complete catalog.", zhDesc: "完整目录支持精确货号排序、服务器筛选和快速分页。", href: "/products" },
+  { icon: Database, en: "7,000+ products now searchable", zh: "7,000+ 产品可检索", enDesc: "Exact catalog ID ranking, server-side filters and fast pagination across the complete catalog.", zhDesc: "完整目录支持精确货号排序、服务器筛选和快速分页。", href: "/products" },
   { icon: FileText, en: "International quotation workflow", zh: "国际报价流程", enDesc: "Structured inquiries and configurable catalog quotations for global purchasing teams.", zhDesc: "面向全球采购团队的结构化询盘和可配置目录报价。", href: "/quote" },
   { icon: BookOpen, en: "Practical technical resources", zh: "实用技术资源", enDesc: "Guidance for cell handling, assay selection and diagnostic reference material planning.", zhDesc: "关于细胞操作、检测选择和诊断标准品规划的指南。", href: "/tech-center" },
 ];

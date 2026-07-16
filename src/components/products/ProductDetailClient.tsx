@@ -18,6 +18,7 @@ export default function ProductDetailClient({ product, related, category }: { pr
   const catId = category.id;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ivd-b2b-platform.vercel.app";
   const numericPrice = Number(String(product.listPrice || "").replace(/[^0-9.]/g, ""));
+  const confirmedInStock = product.status?.trim() === "现货" || /^in stock$/i.test(product.status?.trim() || "");
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -28,12 +29,13 @@ export default function ProductDetailClient({ product, related, category }: { pr
     category: catTitle,
     brand: { "@type": "Brand", name: catId === "leadingmed-products" ? "LeadingMed" : catId === "ningpu-qc" ? "Ningpu Diagnostics" : "Cobioer BioSciences" },
     url: `${siteUrl}/products/${encodeURIComponent(product.id)}`,
-    ...(Number.isFinite(numericPrice) && numericPrice > 0 ? {
+    ...(Number.isFinite(numericPrice) && numericPrice > 0 && confirmedInStock ? {
       offers: {
         "@type": "Offer",
         priceCurrency: "CNY",
         price: numericPrice,
         availability: "https://schema.org/InStock",
+        itemCondition: "https://schema.org/NewCondition",
         url: `${siteUrl}/contact?product=${encodeURIComponent(product.id)}`,
       },
     } : {}),
