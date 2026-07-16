@@ -1,15 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { calculateQuote } from "@/lib/quote-pricing";
 import { supabaseInsert } from "@/lib/supabase-rest";
+import { jsonRequestError, rateLimit, readJsonRequest } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const clean = (value: unknown, max = 500) => typeof value === "string" ? value.trim().slice(0, max) : "";
 
 export async function POST(request: NextRequest) {
-  const body = await request.json().catch(() => null) as Record<string, unknown> | null;
-  if (!body) return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
+  let body: Record<string, unknown>;
+  try { body = await readJsonRequest<Record<string, unknown>>(request); }
+  catch (error) { return jsonRequestError(error); }
   if (body.website) return NextResponse.json({ ok: true });
+  const limited = rateLimit(request, "quote-save", 8, 10 * 60 * 1000);
+  if (limited) return limited;
   const fullName = clean(body.fullName, 120);
   const email = clean(body.email, 254).toLowerCase();
   const company = clean(body.company, 180);

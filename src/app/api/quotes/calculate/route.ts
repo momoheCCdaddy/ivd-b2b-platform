@@ -1,9 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { calculateQuote } from "@/lib/quote-pricing";
+import { rateLimit } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
 
 export async function GET(request: NextRequest) {
+  const limited = rateLimit(request, "quote-calculate", 60, 60 * 1000);
+  if (limited) return limited;
   const productId = request.nextUrl.searchParams.get("product")?.slice(0, 120) || "";
   const quantity = Number(request.nextUrl.searchParams.get("quantity")) || 1;
   const currency = request.nextUrl.searchParams.get("currency") || "USD";

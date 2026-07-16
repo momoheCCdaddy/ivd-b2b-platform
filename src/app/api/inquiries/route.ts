@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseInsert } from "@/lib/supabase-rest";
+import { jsonRequestError, rateLimit, readJsonRequest } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
 
@@ -32,12 +33,14 @@ function clean(value: unknown, max = 500) {
 export async function POST(request: NextRequest) {
   let payload: InquiryPayload;
   try {
-    payload = await request.json();
-  } catch {
-    return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
+    payload = await readJsonRequest<InquiryPayload>(request);
+  } catch (error) {
+    return jsonRequestError(error);
   }
 
   if (payload.website) return NextResponse.json({ ok: true });
+  const limited = rateLimit(request, "inquiry", 8, 10 * 60 * 1000);
+  if (limited) return limited;
 
   const fullName = clean(payload.fullName, 120);
   const email = clean(payload.email, 254).toLowerCase();
