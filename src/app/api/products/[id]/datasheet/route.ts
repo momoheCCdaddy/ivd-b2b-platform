@@ -10,6 +10,24 @@ function latin(value: unknown, max = 140) {
   return String(value ?? "").replace(/[^\x20-\x7E]/g, " ").replace(/\s+/g, " ").trim().slice(0, max);
 }
 
+function wrapText(font: { widthOfTextAtSize: (text: string, size: number) => number }, value: string, size: number, maxWidth: number, maxLines = 4) {
+  const words = value.split(" ").filter(Boolean);
+  const lines: string[] = [];
+  let line = "";
+  for (const word of words) {
+    const next = `${line} ${word}`.trim();
+    if (line && font.widthOfTextAtSize(next, size) > maxWidth) {
+      lines.push(line);
+      line = word;
+      if (lines.length === maxLines - 1) break;
+    } else {
+      line = next;
+    }
+  }
+  if (line && lines.length < maxLines) lines.push(line);
+  return lines;
+}
+
 function findProduct(id: string) {
   const needle = decodeURIComponent(id).toLowerCase();
   for (const category of productCategories) for (const subcategory of category.items) {
@@ -43,16 +61,19 @@ export async function GET(_request: NextRequest, { params }: { params: { id: str
   let y = 635;
   page.drawText("PRODUCT OVERVIEW", { x: 42, y, size: 9, font: bold, color: blue }); y -= 20;
   const description = latin(product.descriptionEn || product.description, 480) || "Contact our technical team for product-specific background and application information.";
-  const words = description.split(" "); let line = "";
-  for (const word of words) { const next = `${line} ${word}`.trim(); if (regular.widthOfTextAtSize(next, 9) > 500) { page.drawText(line, { x: 42, y, size: 9, font: regular, color: gray }); y -= 14; line = word; } else line = next; }
-  if (line) { page.drawText(line, { x: 42, y, size: 9, font: regular, color: gray }); y -= 28; }
+  for (const line of wrapText(regular, description, 9, 500, 5)) { page.drawText(line, { x: 42, y, size: 9, font: regular, color: gray }); y -= 14; }
+  y -= 14;
 
-  const specs: Array<[string, unknown]> = [["Catalog ID", product.id], ["Specification", product.specs], ["Parent cell", product.parentCell], ["Culture medium", product.cultureMedium], ["Stability", product.stability], ["Source", product.source], ["Classification", product.classLevel2], ["Subtype", product.classLevel3], ["Assay format", product.assayFormat], ["Transducer", product.transducer], ["Status", product.status]];
+  const specs: Array<[string, unknown]> = [["Catalog ID", product.id], ["Specification", product.specsEn || product.specs], ["Parent cell", product.parentCell], ["Culture medium", product.cultureMedium], ["Stability", product.stability], ["Source", product.source], ["Classification", product.classLevel2], ["Subtype", product.classLevel3], ["Assay format", product.assayFormat], ["Transducer", product.transducer], ["Status", product.status]];
   page.drawText("TECHNICAL INFORMATION", { x: 42, y, size: 9, font: bold, color: blue }); y -= 18;
   for (const [label, raw] of specs.filter(([, value]) => value && String(value).toLowerCase() !== "nan").slice(0, 10)) {
-    page.drawRectangle({ x: 42, y: y - 4, width: 511, height: 22, color: y % 2 ? rgb(0.96, 0.97, 0.98) : rgb(0.985, 0.99, 0.99) });
-    page.drawText(label, { x: 52, y: y + 3, size: 8, font: bold, color: gray });
-    page.drawText(latin(raw, 72), { x: 175, y: y + 3, size: 8, font: regular, color: navy }); y -= 24;
+    const lines = wrapText(regular, latin(raw, 220), 8, 365, 3);
+    const rowHeight = Math.max(22, lines.length * 10 + 8);
+    const rowTop = y + 14;
+    page.drawRectangle({ x: 42, y: rowTop - rowHeight, width: 511, height: rowHeight, color: y % 2 ? rgb(0.96, 0.97, 0.98) : rgb(0.985, 0.99, 0.99) });
+    page.drawText(label, { x: 52, y: rowTop - 15, size: 8, font: bold, color: gray });
+    lines.forEach((line, index) => page.drawText(line, { x: 175, y: rowTop - 15 - index * 10, size: 8, font: regular, color: navy }));
+    y = rowTop - rowHeight - 14;
   }
   y -= 12;
   const applications = (product.applicationsEn?.length ? product.applicationsEn : product.applications || []).map(value => latin(value, 80)).filter(Boolean).slice(0, 8);

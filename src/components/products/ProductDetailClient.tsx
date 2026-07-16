@@ -43,14 +43,16 @@ export default function ProductDetailClient({ product, related, category }: { pr
   const specs: { label: string; labelEn: string; value: string }[] = [];
   if (product.parentCell) specs.push({ label: "亲本细胞", labelEn: "Parent Cell", value: product.parentCell });
   if (product.cultureMedium) specs.push({ label: "培养基", labelEn: "Culture Medium", value: product.cultureMedium });
-  if (product.specs) specs.push({ label: "规格", labelEn: "Specification", value: product.specs });
+  if (product.specs) specs.push({ label: "规格", labelEn: "Specification", value: lang !== "zh" && product.specsEn ? product.specsEn : product.specs });
   if (product.stability) specs.push({ label: "稳定性", labelEn: "Stability", value: product.stability });
   if (product.source) specs.push({ label: "来源", labelEn: "Source", value: product.source });
   if (product.classLevel2) specs.push({ label: "分类", labelEn: "Classification", value: product.classLevel2 });
   if (product.classLevel3) specs.push({ label: "亚型", labelEn: "Subtype", value: product.classLevel3 });
   if (product.assayFormat) specs.push({ label: "检测方法", labelEn: "Assay Format", value: product.assayFormat });
   if (product.transducer) specs.push({ label: "转导蛋白", labelEn: "Transducer", value: product.transducer });
-  if (product.rawApplication) specs.push({ label: "应用", labelEn: "Application", value: product.rawApplication });
+  if (product.rawApplication) specs.push({ label: "应用", labelEn: "Application", value: lang !== "zh" && product.rawApplicationEn ? product.rawApplicationEn : product.rawApplication });
+
+  const localizedNote = lang !== "zh" && product.noteEn ? product.noteEn : product.note;
 
   return (
     <div className="pt-16 min-h-screen bg-[var(--color-bg)]">
@@ -157,13 +159,13 @@ export default function ProductDetailClient({ product, related, category }: { pr
             )}
 
             {/* Note */}
-            {product.note && product.note !== "nan" && (
+            {localizedNote && localizedNote !== "nan" && (
               <div className="bg-warm-50/30 border border-warm-100/50 rounded-2xl p-6 shadow-sm">
                 <h2 className="font-display font-semibold text-warm-800 mb-2 text-sm flex items-center gap-2">
                   <FileText className="w-4 h-4 text-warm-500" />
                   {t("products.detail.notes")}
                 </h2>
-                <p className="text-sm text-warm-700 leading-relaxed">{product.note}</p>
+                <p className="text-sm text-warm-700 leading-relaxed">{localizedNote}</p>
               </div>
             )}
 

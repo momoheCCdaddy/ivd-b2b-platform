@@ -1,16 +1,17 @@
 import productData from "./products.json";
 import leadingmedData from "./leadingmed-products.generated.json";
+import ningpuData from "./ningpu-products.generated.json";
 
 export interface ProductItem {
   id: string; name: string; nameEn: string;
   description: string; descriptionEn: string;
   tags: string[]; tagsEn: string[];
-  specs?: string; parentCell?: string; cultureMedium?: string; stability?: string;
+  specs?: string; specsEn?: string; parentCell?: string; cultureMedium?: string; stability?: string;
   applications: string[]; applicationsEn: string[];
   status?: string; listPrice?: string; dailyPrice?: string;
-  source?: string; note?: string;
+  source?: string; note?: string; noteEn?: string;
   classLevel2?: string; classLevel3?: string;
-  rawApplication?: string; assayFormat?: string; transducer?: string;
+  rawApplication?: string; rawApplicationEn?: string; assayFormat?: string; transducer?: string;
 }
 
 export interface ProductSubCategory {
@@ -32,13 +33,25 @@ export interface ProductCategory {
 const baseProductCategories = productData as ProductCategory[];
 
 export const productCategories: ProductCategory[] = baseProductCategories.map((category) => {
-  if (category.id !== "leadingmed-products") return category;
+  if (category.id === "ningpu-qc") {
+    return {
+      ...category,
+      titleEn: "Ningpu Quality Controls",
+      description: "江苏宁普医疗天然病原体分子、抗原、NGS及HPV细胞质控品",
+      descriptionEn: "Ningpu natural-pathogen molecular, antigen, NGS, and HPV cellular quality controls",
+      items: ningpuData.items as ProductSubCategory[],
+    };
+  }
 
-  return {
-    ...category,
-    titleEn: "LeadingMed Products",
-    description: "立顶医疗（LeadingMed）的体外诊断原料、质控品、微球与配套解决方案",
-    descriptionEn: "LeadingMed IVD raw materials, quality controls, microspheres, and supporting solutions",
-    items: leadingmedData.items as ProductSubCategory[],
-  };
+  if (category.id === "leadingmed-products") {
+    return {
+      ...category,
+      titleEn: "LeadingMed Products",
+      description: "立顶医疗（LeadingMed）的体外诊断原料、质控品、微球与配套解决方案",
+      descriptionEn: "LeadingMed IVD raw materials, quality controls, microspheres, and supporting solutions",
+      items: leadingmedData.items as ProductSubCategory[],
+    };
+  }
+
+  return category;
 });

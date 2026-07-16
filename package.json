@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "import:leadingmed": "node scripts/import-leadingmed.mjs --write"
+    "import:leadingmed": "node scripts/import-leadingmed.mjs --write",
+    "import:ningpu": "python scripts/import-ningpu.py --write"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",
