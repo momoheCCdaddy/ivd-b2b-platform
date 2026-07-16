@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useI18n } from "@/lib/i18n";
 
 export default function CookieConsent() {
+  const { t } = useI18n();
   const [visible, setVisible] = useState(false);
   useEffect(() => setVisible(localStorage.getItem("cobioer_cookie_consent") === null), []);
   if (!visible) return null;
@@ -14,12 +16,11 @@ export default function CookieConsent() {
   }
 
   return (
-    <aside className="fixed bottom-4 left-4 right-4 z-50 mx-auto max-w-3xl rounded-2xl border border-secondary-200 bg-white p-5 shadow-2xl" aria-label="Cookie consent">
+    <aside className="fixed bottom-4 left-4 right-4 z-50 mx-auto max-w-3xl rounded-2xl border border-secondary-200 bg-white p-5 shadow-2xl" aria-label={t("cookie.ariaLabel")}>
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-        <p className="flex-1 text-xs leading-relaxed text-secondary-500">We use essential storage for language and privacy preferences. Optional analytics are activated only after consent. See our <a href="/privacy" className="font-semibold text-primary-600 hover:underline">Privacy Policy</a>.</p>
-        <div className="flex shrink-0 gap-2"><button onClick={() => choose("essential")} className="rounded-lg border border-secondary-200 px-3 py-2 text-xs font-semibold text-secondary-600 hover:bg-secondary-50">Essential only</button><button onClick={() => choose("accepted")} className="rounded-lg bg-primary-600 px-3 py-2 text-xs font-semibold text-white hover:bg-primary-700">Accept all</button></div>
+        <p className="flex-1 text-xs leading-relaxed text-secondary-500">{t("cookie.message")} <a href="/privacy" className="font-semibold text-primary-600 hover:underline">{t("cookie.privacyPolicy")}</a>.</p>
+        <div className="flex shrink-0 gap-2"><button onClick={() => choose("essential")} className="rounded-lg border border-secondary-200 px-3 py-2 text-xs font-semibold text-secondary-600 hover:bg-secondary-50">{t("cookie.essentialOnly")}</button><button onClick={() => choose("accepted")} className="rounded-lg bg-primary-600 px-3 py-2 text-xs font-semibold text-white hover:bg-primary-700">{t("cookie.acceptAll")}</button></div>
       </div>
     </aside>
   );
 }
-
