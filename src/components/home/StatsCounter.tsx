@@ -1,10 +1,12 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { useI18n } from '@/lib/i18n';
+import { catalogFacts } from '@/data/catalog-facts';
 
 interface StatItem {
   value: number;
-  suffix: string;
+  suffix?: string;
   label: string;
   accent?: boolean;
 }
@@ -46,8 +48,7 @@ function StatCard({ value, suffix, label, accent }: StatItem) {
     <div ref={ref} className="text-center">
       <div className={"stat-number mb-2 " + (accent ? "text-signal-300" : "text-white")}>
         {count.toLocaleString()}
-        {suffix === "+" && <span className="text-signal-300">+</span>}
-        {(suffix === "?" || suffix === "?" || suffix === "?" || suffix === "?") && <span className="text-xl md:text-2xl font-display"> {suffix}</span>}
+        {suffix && <span className="text-xl md:text-2xl font-display">{suffix}</span>}
       </div>
       <p className="text-sm text-primary-200/80 font-medium">{label}</p>
     </div>
@@ -55,15 +56,16 @@ function StatCard({ value, suffix, label, accent }: StatItem) {
 }
 
 export default function StatsCounter() {
+  const { t } = useI18n();
   return (
     <section className="py-16 md:py-20 gradient-hero relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-subtle opacity-20" />
       <div className="container-page relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          <StatCard value={3000} suffix="+" label="????" accent={true} />
-          <StatCard value={1439} suffix="?" label="?????" />
-          <StatCard value={500} suffix="?" label="????" />
-          <StatCard value={30} suffix="?" label="????" />
+          <StatCard value={catalogFacts.products} label={t("home.stats.catalogProducts")} accent={true} />
+          <StatCard value={catalogFacts.categories} label={t("home.stats.productCategories")} />
+          <StatCard value={catalogFacts.brands} label={t("home.stats.integratedBrands")} />
+          <StatCard value={catalogFacts.languages} label={t("home.stats.interfaceLanguages")} />
         </div>
       </div>
     </section>

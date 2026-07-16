@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ChevronRight, ArrowRight, FlaskConical } from 'lucide-react';
 import { useI18n } from '@/lib/i18n';
+import { catalogFacts } from '@/data/catalog-facts';
 
 export default function HeroBanner() {
   const { t } = useI18n();
@@ -59,23 +60,23 @@ export default function HeroBanner() {
           <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl">
             <div className="space-y-6">
               <div>
-                <div className="stat-number text-signal-300">7,000+</div>
-                <div className="text-sm text-primary-200">{t("home.stats.products")}</div>
+                <div className="stat-number text-signal-300">{catalogFacts.products.toLocaleString()}</div>
+                <div className="text-sm text-primary-200">{t("home.stats.catalogProducts")}</div>
               </div>
               <div className="border-t border-white/10" />
               <div>
-                <div className="stat-number text-white">500+</div>
-                <div className="text-sm text-primary-200">{t("home.stats.cells")}</div>
+                <div className="stat-number text-white">{catalogFacts.categories}</div>
+                <div className="text-sm text-primary-200">{t("home.stats.productCategories")}</div>
               </div>
               <div className="border-t border-white/10" />
               <div>
-                <div className="stat-number text-white">30+</div>
-                <div className="text-sm text-primary-200">{t("home.stats.countries")}</div>
+                <div className="stat-number text-white">{catalogFacts.brands}</div>
+                <div className="text-sm text-primary-200">{t("home.stats.integratedBrands")}</div>
               </div>
               <div className="border-t border-white/10" />
               <div>
-                <div className="stat-number text-primary-300">2013</div>
-                <div className="text-sm text-primary-200">{t("home.stats.founded")}</div>
+                <div className="stat-number text-primary-300">{catalogFacts.languages}</div>
+                <div className="text-sm text-primary-200">{t("home.stats.interfaceLanguages")}</div>
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ const iconMap: Record<string, string> = {
 };
 
 function ProductCard({ category }: { category: CatalogSummary }) {
-  const { lang } = useI18n();
+  const { lang, t } = useI18n();
   const english = lang !== 'zh';
   return (
     <Link href={`/products#${category.id}`} className="group block">
@@ -37,10 +37,10 @@ function ProductCard({ category }: { category: CatalogSummary }) {
               {item}
             </span>
           ))}
-          <span className="text-xs px-2 py-0.5 rounded-full bg-primary-50 text-primary-600">{category.count.toLocaleString()} products</span>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-primary-50 text-primary-600">{t("home.products.productCount", { count: category.count.toLocaleString() })}</span>
         </div>
         <span className="inline-flex items-center text-sm text-primary-500 font-medium group-hover:gap-2 transition-all">
-          {english ? 'Explore category' : '查看分类'} <ChevronRight className="w-4 h-4 ml-0.5" />
+          {t("home.products.exploreCategory")} <ChevronRight className="w-4 h-4 ml-0.5" />
         </span>
       </div>
     </Link>
@@ -48,15 +48,14 @@ function ProductCard({ category }: { category: CatalogSummary }) {
 }
 
 export default function ProductShowcase() {
-  const { lang } = useI18n();
-  const english = lang !== 'zh';
+  const { t } = useI18n();
   return (
     <section className="section-padding bg-neutral-50" id="products">
       <div className="container-page">
         <div className="text-center mb-12">
-          <h2 className="heading-2 mb-4">{english ? 'Products built for translational research' : '产品中心'}</h2>
+          <h2 className="heading-2 mb-4">{t("home.products.title")}</h2>
           <p className="body-text max-w-2xl mx-auto">
-            {english ? 'From target models to diagnostic reference materials, explore a catalog designed for reproducible R&D and IVD development.' : '从药物靶点模型到诊断标准品，从科研细胞到IVD核心原料 — 多元化的产品矩阵覆盖生命科学研究的全链条需求'}
+            {t("home.products.description")}
           </p>
         </div>
 
@@ -68,7 +67,7 @@ export default function ProductShowcase() {
 
         <div className="text-center mt-10">
           <Button variant="outline" size="lg" href="/products">
-            {english ? 'Browse full catalog' : '查看全部产品'} <ArrowRight className="ml-2 w-4 h-4" />
+            {t("home.products.browseCatalog")} <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
       </div>
