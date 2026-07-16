@@ -5,6 +5,8 @@
   "private": true,
   "description": "生命科学企业门户网站 - Next.js + Tailwind CSS",
   "scripts": {
+    "prebuild": "pnpm check:i18n",
+    "check:i18n": "node scripts/check-i18n.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
