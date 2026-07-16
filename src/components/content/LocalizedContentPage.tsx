@@ -4,12 +4,19 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Dna, FileCheck2, FlaskConical, Globe2, Microscope, ShieldCheck } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { siteContent } from "@/data/site-content";
+import contentLocales from "../../../messages/site-content-locales.json";
 
 const icons = [Dna, FlaskConical, ShieldCheck, Microscope, Globe2, FileCheck2];
+const sourceIndexes = new Map(contentLocales.sources.map((source, index) => [source, index]));
+const translatedLocales = contentLocales as typeof contentLocales & Record<string, string[]>;
 
 export default function LocalizedContentPage({ page }: { page: keyof typeof siteContent }) {
-  const { lang } = useI18n(); const content = siteContent[page]; const locale = lang === "zh" ? "zh" : "en";
-  const value = (text: { en: string; zh: string }) => text[locale];
+  const { lang } = useI18n(); const content = siteContent[page];
+  const value = (text: { en: string; zh: string }) => {
+    if (lang === "en" || lang === "zh") return text[lang];
+    const index = sourceIndexes.get(text.en);
+    return index === undefined ? text.en : translatedLocales[lang]?.[index] || text.en;
+  };
 
   return <div className="min-h-screen bg-white pt-20">
     <section className="relative overflow-hidden border-b border-secondary-100 bg-secondary-950 py-20 text-white"><div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_25%,rgba(20,152,184,.22),transparent_38%)]" /><div className="container-page relative"><div className="max-w-3xl"><p className="text-xs font-semibold tracking-[0.22em] text-primary-300">{value(content.eyebrow)}</p><h1 className="mt-5 font-display text-4xl font-bold leading-tight md:text-6xl">{value(content.title)}</h1><p className="mt-6 max-w-2xl text-base leading-relaxed text-secondary-200 md:text-lg">{value(content.description)}</p></div></div></section>
