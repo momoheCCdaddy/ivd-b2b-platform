@@ -12,9 +12,9 @@ export default function Footer() {
     {
       title: t("footer.products"),
       links: [
-        { label: t("footer.products.targetModels"), href: '/products#target-models' },
-        { label: t("footer.products.diagnostic"), href: '/products#diagnostic' },
-        { label: t("footer.products.cells"), href: '/products#cells' },
+        { label: t("footer.products.targetModels"), href: '/products?category=gpcr-targets' },
+        { label: t("footer.products.diagnostic"), href: '/products?category=diagnostic-standards' },
+        { label: t("footer.products.cells"), href: '/products?category=research-cells' },
         { label: t("footer.products.services"), href: '/services' },
       ],
     },

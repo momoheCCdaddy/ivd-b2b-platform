@@ -32,10 +32,10 @@ const mainNavigation: NavItem[] = [
     labelKey: 'nav.products',
     href: '/products',
     children: [
-      { labelKey: 'nav.products.children.target-models', href: '/products#target-models' },
-      { labelKey: 'nav.products.children.diagnostic', href: '/products#diagnostic' },
-      { labelKey: 'nav.products.children.cells', href: '/products#cells' },
-      { labelKey: 'nav.products.children.ivd', href: '/products#ivd' },
+      { labelKey: 'nav.products.children.target-models', href: '/products?category=gpcr-targets' },
+      { labelKey: 'nav.products.children.diagnostic', href: '/products?category=diagnostic-standards' },
+      { labelKey: 'nav.products.children.cells', href: '/products?category=research-cells' },
+      { labelKey: 'nav.products.children.ivd', href: '/products?category=leadingmed-products' },
     ],
   },
   {

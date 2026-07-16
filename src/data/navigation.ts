@@ -19,10 +19,10 @@ export const mainNavigation: NavItem[] = [
     label: '产品中心',
     href: '/products',
     children: [
-      { label: '药物靶点模型', href: '/products#target-models' },
-      { label: '诊断标准品', href: '/products#diagnostic' },
-      { label: '科研细胞', href: '/products#cells' },
-      { label: 'IVD原料', href: '/products#ivd' },
+      { label: '药物靶点模型', href: '/products?category=gpcr-targets' },
+      { label: '诊断标准品', href: '/products?category=diagnostic-standards' },
+      { label: '科研细胞', href: '/products?category=research-cells' },
+      { label: 'IVD原料', href: '/products?category=leadingmed-products' },
     ],
   },
   {

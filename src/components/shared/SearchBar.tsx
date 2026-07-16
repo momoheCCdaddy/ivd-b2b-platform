@@ -23,7 +23,7 @@ export default function SearchBar() {
     productCategories.forEach((cat) => {
       cat.items.forEach((item) => {
         if (item.name.includes(q) || item.description.includes(q)) {
-          found.push({ title: item.name, href: `/products#${cat.id}`, type: '产品' });
+          found.push({ title: item.name, href: `/products?category=${encodeURIComponent(cat.id)}&sub=${encodeURIComponent(item.id)}`, type: '产品' });
         }
       });
     });
