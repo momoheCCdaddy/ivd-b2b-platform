@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "import:leadingmed": "node scripts/import-leadingmed.mjs --write"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",

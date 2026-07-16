@@ -1,4 +1,5 @@
 import productData from "./products.json";
+import leadingmedData from "./leadingmed-products.generated.json";
 
 export interface ProductItem {
   id: string; name: string; nameEn: string;
@@ -28,4 +29,16 @@ export interface ProductCategory {
   items: ProductSubCategory[];
 }
 
-export const productCategories: ProductCategory[] = productData as ProductCategory[];
+const baseProductCategories = productData as ProductCategory[];
+
+export const productCategories: ProductCategory[] = baseProductCategories.map((category) => {
+  if (category.id !== "leadingmed-products") return category;
+
+  return {
+    ...category,
+    titleEn: "LeadingMed Products",
+    description: "立顶医疗（LeadingMed）的体外诊断原料、质控品、微球与配套解决方案",
+    descriptionEn: "LeadingMed IVD raw materials, quality controls, microspheres, and supporting solutions",
+    items: leadingmedData.items as ProductSubCategory[],
+  };
+});

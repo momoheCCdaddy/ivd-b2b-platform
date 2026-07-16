@@ -1,0 +1,4638 @@
+{
+  "source": [
+    "https://www.leadingmed.cn/product.html",
+    "https://en.leadingmed.cn/product/7/"
+  ],
+  "generatedAt": "2026-07-16T04:54:56.612Z",
+  "sourcePages": {
+    "zh": 91,
+    "en": 32
+  },
+  "productCount": 163,
+  "items": [
+    {
+      "id": "antigens-antibodies",
+      "name": "抗原/抗体",
+      "nameEn": "Antigens & Antibodies",
+      "description": "诊断用蛋白原料和抗体",
+      "descriptionEn": "Diagnostic protein raw materials and antibodies",
+      "applications": [
+        "体外诊断"
+      ],
+      "applicationsEn": [
+        "In vitro diagnostics"
+      ],
+      "products": [
+        {
+          "id": "LD-Ag-C1q",
+          "name": "补体C1q",
+          "nameEn": "Complement C1q",
+          "description": "补体C1q产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/20.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-HBP",
+          "name": "肝素结合蛋白抗原",
+          "nameEn": "Heparin-binding protein antigen",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-D-ADP-L",
+          "name": "脂联素抗原稀释液 ☆",
+          "nameEn": "Adiponectin antigen diluent",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-D-CRP-L",
+          "name": "CRP抗原稀释液 ☆",
+          "nameEn": "CRP antigen diluent",
+          "description": "C反应蛋白（CRP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-D-HBP-L",
+          "name": "HBP抗原稀释液",
+          "nameEn": "HBP antigen diluent",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-D-PCT-L",
+          "name": "PCT抗原稀释液 ☆",
+          "nameEn": "PCT antigen diluent",
+          "description": "降钙素原（PCT）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/61.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-En-ACE",
+          "name": "血管紧张素转化酶",
+          "nameEn": "Angiotensin-converting enzyme",
+          "description": "血管紧张素转化酶（ACE）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/12.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-gpAb-CRP-05",
+          "name": "羊抗人CRP多克隆抗体05",
+          "nameEn": "Goat anti-human CRP polyclonal antibody 05",
+          "description": "C反应蛋白（CRP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-gpAb-CysC",
+          "name": "羊抗人CysC多克隆抗体",
+          "nameEn": "Goat anti-human CysC polyclonal antibody",
+          "description": "胱抑素C（Cys C）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/45.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-gpAb-HbA1c-04",
+          "name": "羊抗鼠HbA1c多克隆抗体04",
+          "nameEn": "Goat anti-mouse HbA1c polyclonal antibody 04",
+          "description": "糖化血红蛋白（HbA1c）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-gpAb-Lpa-01",
+          "name": "羊抗人Lpa多克隆抗体01",
+          "nameEn": "Goat anti-human Lpa polyclonal antibody 01",
+          "description": "脂蛋白a(Lp(a))产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/3.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-gpAb-PCT-04",
+          "name": "鼠抗人PCT多克隆抗体04 ☆",
+          "nameEn": "Mouse anti-human PCT polyclonal antibody 04",
+          "description": "降钙素原（PCT）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/61.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-gpAb-RBP",
+          "name": "羊抗人RBP多克隆抗体",
+          "nameEn": "Goat anti-human RBP polyclonal antibody",
+          "description": "视黄醇结合蛋白（RBP）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/16.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-ADP-01",
+          "name": "脂联素单克隆抗体1 ☆",
+          "nameEn": "Adiponectin monoclonal antibody 1",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-ADP-02",
+          "name": "脂联素单克隆抗体2 ☆",
+          "nameEn": "Adiponectin monoclonal antibody 2",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-ADP-04",
+          "name": "鼠抗人ADP单克隆抗体04",
+          "nameEn": "Mouse anti-human ADP monoclonal antibody 04",
+          "description": "脂联素（ADP）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/2.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-C1q-01",
+          "name": "鼠抗人C1q单克隆抗体01",
+          "nameEn": "Mouse anti-human C1q monoclonal antibody 01",
+          "description": "补体C1q产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/20.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-CKMB-01",
+          "name": "鼠抗人CKMB单克隆抗体01",
+          "nameEn": "Mouse anti-human CKMB monoclonal antibody 01",
+          "description": "肌酸激酶同工酶（CK-MB）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/46.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-CKMB-02",
+          "name": "鼠抗人CKMB单克隆抗体02",
+          "nameEn": "Mouse anti-human CKMB monoclonal antibody 02",
+          "description": "肌酸激酶同工酶（CK-MB）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/46.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-CRP-01",
+          "name": "鼠抗人CRP单克隆抗体01 ☆",
+          "nameEn": "Mouse anti-human CRP monoclonal antibody 01",
+          "description": "C反应蛋白（CRP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-CRP-02",
+          "name": "鼠抗人CRP单克隆抗体02 ☆",
+          "nameEn": "Mouse anti-human CRP monoclonal antibody 02",
+          "description": "C反应蛋白（CRP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-CRP-03",
+          "name": "鼠抗人CRP单克隆抗体03",
+          "nameEn": "Mouse anti-human CRP monoclonal antibody 03",
+          "description": "C反应蛋白（CRP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-CRP-04",
+          "name": "鼠抗人CRP单克隆抗体04",
+          "nameEn": "Mouse anti-human CRP monoclonal antibody 04",
+          "description": "C反应蛋白（CRP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-DD-01",
+          "name": "鼠抗人D-Dimer单克隆抗体01",
+          "nameEn": "Mouse anti-human D-Dimer monoclonal antibody 01",
+          "description": "D-二聚体（D-Dimer）产品。类型：抗体；应用：胶乳比浊/发光。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊/发光"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/42.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-DD-04",
+          "name": "鼠抗人D-Dimer单克隆抗体04",
+          "nameEn": "Mouse anti-human D-Dimer monoclonal antibody 04",
+          "description": "D-二聚体（D-Dimer）产品。类型：抗体；应用：胶乳比浊/发光。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊/发光"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/42.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-FDP-01",
+          "name": "鼠抗人FDP单克隆抗体01",
+          "nameEn": "Mouse anti-human FDP monoclonal antibody 01",
+          "description": "纤维蛋白（原）降解产物产品。类型：抗体；应用：胶乳比浊/发光。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊/发光"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/14.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-FDP-02",
+          "name": "鼠抗人FDP单克隆抗体02",
+          "nameEn": "Mouse anti-human FDP monoclonal antibody 02",
+          "description": "纤维蛋白（原）降解产物产品。类型：抗体；应用：胶乳比浊/发光。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊/发光"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/14.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-HbA1c-05",
+          "name": "鼠抗人HbA1c单克隆抗体05",
+          "nameEn": "Mouse anti-human HbA1c monoclonal antibody 05",
+          "description": "糖化血红蛋白（HbA1c）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-HbA1c-06",
+          "name": "HbA1c单抗寡聚体06",
+          "nameEn": "HbA1c monoclonal antibody oligomer 06",
+          "description": "糖化血红蛋白（HbA1c）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-HBP-01",
+          "name": "鼠抗人HBP单克隆抗体01",
+          "nameEn": "Mouse anti-human HBP monoclonal antibody 01",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-HBP-02",
+          "name": "鼠抗人HBP单克隆抗体02",
+          "nameEn": "Mouse anti-human HBP monoclonal antibody 02",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-HBP-03",
+          "name": "鼠抗人HBP单克隆抗体03",
+          "nameEn": "Mouse anti-human HBP monoclonal antibody 03",
+          "description": "肝素结合蛋白（HBP）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/10.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-HBP-05",
+          "name": "鼠抗人HBP单克隆抗体05",
+          "nameEn": "Mouse anti-human HBP monoclonal antibody 05",
+          "description": "肝素结合蛋白（HBP）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/10.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-Lp-PLA2-01",
+          "name": "鼠抗人Lp-PLA2单克隆抗体01",
+          "nameEn": "Mouse anti-human Lp-PLA2 monoclonal antibody 01",
+          "description": "脂蛋白相关磷脂酶A2（Lp-PLA2）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/15.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-Lp-PLA2-02",
+          "name": "鼠抗人Lp-PLA2单克隆抗体02",
+          "nameEn": "Mouse anti-human Lp-PLA2 monoclonal antibody 02",
+          "description": "脂蛋白相关磷脂酶A2（Lp-PLA2）产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/15.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-PCT-01",
+          "name": "鼠抗人PCT单克隆抗体01 ☆",
+          "nameEn": "Mouse anti-human PCT monoclonal antibody 01",
+          "description": "降钙素原（PCT）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/61.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-PCT-02",
+          "name": "鼠抗人PCT单克隆抗体02 ☆",
+          "nameEn": "Mouse anti-human PCT monoclonal antibody 02",
+          "description": "降钙素原（PCT）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/61.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-PCT-03",
+          "name": "鼠抗人PCT单克隆抗体03 ☆",
+          "nameEn": "Mouse anti-human PCT monoclonal antibody 03",
+          "description": "降钙素原（PCT）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/61.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-PGI-01",
+          "name": "鼠抗人PGI单克隆抗体01",
+          "nameEn": "Mouse anti-human PGI monoclonal antibody 01",
+          "description": "胃蛋白酶原I产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/9.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-PGI-02",
+          "name": "鼠抗人PGI单克隆抗体02",
+          "nameEn": "Mouse anti-human PGI monoclonal antibody 02",
+          "description": "胃蛋白酶原I产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/9.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-PGII-01",
+          "name": "鼠抗人PGII单克隆抗体01",
+          "nameEn": "Mouse anti-human PGII monoclonal antibody 01",
+          "description": "胃蛋白酶原II产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/43.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-PGII-02",
+          "name": "鼠抗人PGII单克隆抗体02",
+          "nameEn": "Mouse anti-human PGII monoclonal antibody 02",
+          "description": "胃蛋白酶原II产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/43.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-SAA-01",
+          "name": "鼠抗人SAA单克隆抗体01",
+          "nameEn": "Mouse anti-human SAA monoclonal antibody 01",
+          "description": "血清淀粉样蛋白A(SAA)产品。类型：抗体；应用：层析/发光。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "层析/发光"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/47.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-SAA-02",
+          "name": "鼠抗人SAA单克隆抗体02",
+          "nameEn": "Mouse anti-human SAA monoclonal antibody 02",
+          "description": "血清淀粉样蛋白A(SAA)产品。类型：抗体；应用：层析/发光。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "层析/发光"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/47.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-SAA-03",
+          "name": "鼠抗人SAA单克隆抗体03",
+          "nameEn": "Mouse anti-human SAA monoclonal antibody 03",
+          "description": "血清淀粉样蛋白A(SAA)产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/47.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-mAb-SAA-04",
+          "name": "鼠抗人SAA单克隆抗体04",
+          "nameEn": "Mouse anti-human SAA monoclonal antibody 04",
+          "description": "血清淀粉样蛋白A(SAA)产品。类型：抗体；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "抗体"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗体",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/47.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-anti-CCP",
+          "name": "抗环瓜氨酸肽抗体质控品",
+          "nameEn": "Anti-cyclic citrullinated peptide antibody quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-rpAb-CRP-04",
+          "name": "兔抗人CRP多克隆抗体04",
+          "nameEn": "Rabbit anti-human CRP polyclonal antibody 04",
+          "description": "C反应蛋白（CRP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "抗原/抗体",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Antigens & Antibodies",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        }
+      ]
+    },
+    {
+      "id": "ivd-solutions",
+      "name": "IVD解决方案",
+      "nameEn": "IVD Solutions",
+      "description": "立顶医疗体外诊断解决方案",
+      "descriptionEn": "LeadingMed in vitro diagnostic solutions",
+      "applications": [
+        "体外诊断"
+      ],
+      "applicationsEn": [
+        "In vitro diagnostics"
+      ],
+      "products": [
+        {
+          "id": "LD-cLATEX-300",
+          "name": "微球300",
+          "nameEn": "Microsphere300",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-cLATEX-400",
+          "name": "微球400",
+          "nameEn": "Microsphere400",
+          "description": "降钙素原（PCT）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/61.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-cLATEX-90",
+          "name": "微球90",
+          "nameEn": "Microsphere90",
+          "description": "C反应蛋白（CRP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-ADP",
+          "name": "脂联素OEM试剂☆",
+          "nameEn": "Adiponectin OEM reagent",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-CRP",
+          "name": "C反应蛋白OEM试剂",
+          "nameEn": "C-reactive protein OEM reagent",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-HbA1c",
+          "name": "糖化血红蛋白OEM试剂☆",
+          "nameEn": "Glycated hemoglobin OEM reagent",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-HBP",
+          "name": "肝素结合蛋白OEM试剂",
+          "nameEn": "Heparin-binding protein OEM reagent",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-PCT",
+          "name": "降钙素原OEM试剂",
+          "nameEn": "Procalcitonin OEM reagent",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-PGI",
+          "name": "胃蛋白酶原I OEM试剂☆",
+          "nameEn": "Pepsinogen I OEM reagent",
+          "description": "胃蛋白酶原II（PGII）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/60.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-PGII",
+          "name": "胃蛋白酶原II OEM试剂☆",
+          "nameEn": "Pepsinogen II OEM reagent",
+          "description": "胃蛋白酶原II（PGII）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/60.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-pLATEX-180",
+          "name": "微球180",
+          "nameEn": "Microsphere180",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Pn-SLO",
+          "name": "SLO蛋白",
+          "nameEn": "LD-Pn-SLO",
+          "description": "抗链球菌溶血素“O”（ASO）产品。类型：标记原料；应用：胶乳比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "IVD解决方案",
+            "标记原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "IVD Solutions",
+            "IVD product"
+          ],
+          "applications": [
+            "胶乳比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "标记原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/48.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        }
+      ]
+    },
+    {
+      "id": "microspheres",
+      "name": "微球",
+      "nameEn": "Microspheres",
+      "description": "免疫检测与层析用微球",
+      "descriptionEn": "Microspheres for immunoassay and chromatography",
+      "applications": [
+        "体外诊断"
+      ],
+      "applicationsEn": [
+        "In vitro diagnostics"
+      ],
+      "products": [
+        {
+          "id": "LD-Latex-P140",
+          "name": "白色乳胶微球",
+          "nameEn": "White latexmicrosphere",
+          "description": "物理吸附微球产品。类型：IVD产品；应用：HbA1c。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "HbA1c"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/6.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102010",
+          "name": "LD102010",
+          "nameEn": "LD102010",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：RBP、mAlb。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "RBP、mAlb"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102012",
+          "name": "LD102012",
+          "nameEn": "LD102012",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：ASO。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "ASO"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102015",
+          "name": "LD102015",
+          "nameEn": "LD102015",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：D-Dimer。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "D-Dimer"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102019",
+          "name": "LD102019",
+          "nameEn": "LD102019",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102023",
+          "name": "LD102023",
+          "nameEn": "LD102023",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102025",
+          "name": "LD102025",
+          "nameEn": "LD102025",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：D-Dimer。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "D-Dimer"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102028",
+          "name": "LD102028",
+          "nameEn": "LD102028",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：RBP。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "RBP"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102029",
+          "name": "LD102029",
+          "nameEn": "LD102029",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：Lp（a）、CysC。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "Lp（a）、CysC"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102030",
+          "name": "白色乳胶微球",
+          "nameEn": "White latexmicrosphere",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：SAA。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "SAA"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102031",
+          "name": "LD102031",
+          "nameEn": "LD102031",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：CRP。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "CRP"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD102032",
+          "name": "LD102032",
+          "nameEn": "LD102032",
+          "description": "化学共价偶联微球产品。类型：IVD产品；应用：SAA。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "SAA"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/5.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD202002",
+          "name": "红色乳胶微球",
+          "nameEn": "Red latexmicrosphere",
+          "description": "红色乳胶微球产品。类型：IVD产品；应用：甲乙流、HP。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "甲乙流、HP"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1301535007134408704.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD202010",
+          "name": "紫色乳胶微球",
+          "nameEn": "Purple latexmicrosphere",
+          "description": "紫色乳胶微球产品。类型：IVD产品；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/7.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD302016",
+          "name": "LD302016",
+          "nameEn": "LD302016",
+          "description": "时间分辨荧光微球产品。类型：IVD产品；应用：1%。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "1%"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1301536481440653312.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD302017",
+          "name": "LD302017",
+          "nameEn": "LD302017",
+          "description": "时间分辨荧光微球产品。类型：IVD产品；应用：1%。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "1%"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1301536481440653312.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD302024",
+          "name": "时间分辨荧光微球",
+          "nameEn": "Time-resolved fluorescentmicrosphere",
+          "description": "时间分辨荧光微球产品。类型：IVD产品；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "微球",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Microspheres",
+            "IVD product"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1301536481440653312.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        }
+      ]
+    },
+    {
+      "id": "quality-controls",
+      "name": "质控品",
+      "nameEn": "Quality Controls",
+      "description": "体外诊断质量控制材料",
+      "descriptionEn": "Quality-control materials for in vitro diagnostics",
+      "applications": [
+        "体外诊断"
+      ],
+      "applicationsEn": [
+        "In vitro diagnostics"
+      ],
+      "products": [
+        {
+          "id": "LD-ACE-01",
+          "name": "血管紧张素转化酶 （ACE）",
+          "nameEn": "Angiotensin-converting enzyme (ACE)",
+          "description": "血管紧张素转化酶（ACE）产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/53.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-ADP",
+          "name": "脂联素",
+          "nameEn": "Adiponectin",
+          "description": "脂联素（ADP）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/2.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-ApoA1",
+          "name": "人载脂蛋白A1",
+          "nameEn": "Human apolipoprotein A1",
+          "description": "载脂蛋白A1（ApoA1）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1301506056563417088.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-ApoB",
+          "name": "人载脂蛋白B",
+          "nameEn": "Human apolipoprotein B",
+          "description": "载脂蛋白B（ApoB）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/4.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-ASO",
+          "name": "ASO校准质控原料",
+          "nameEn": "ASOcalibration and QC material",
+          "description": "抗链球菌溶血素“O”（ASO）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/48.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-CRP",
+          "name": "C反应蛋白",
+          "nameEn": "C-reactive protein",
+          "description": "C反应蛋白（CRP）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/13.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-CysC",
+          "name": "胱抑素C",
+          "nameEn": "Cystatin C",
+          "description": "胱抑素C（Cys C）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/45.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-DD",
+          "name": "D-二聚体",
+          "nameEn": "D-dimer",
+          "description": "D-二聚体（D-Dimer）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/42.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-FDP",
+          "name": "纤维蛋白（原）降解产物",
+          "nameEn": "Fibrin(ogen) degradation products",
+          "description": "纤维蛋白（原）降解产物产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/14.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-HbA1c-04",
+          "name": "HbA1c高值",
+          "nameEn": "HbA1c high value",
+          "description": "糖化血红蛋白质控品产品。类型：浓缩；应用：HPLC、荧光层析法、硼酸亲和色谱法、胶乳免疫比浊法。",
+          "descriptionEn": "Glycated Hemoglobin Control. Type: Concentrated; application: HPLC, fluorescence chromatography, boronate affinity chromatography, latex immunoturbidimetry.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "浓缩"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Concentrated"
+          ],
+          "applications": [
+            "HPLC、荧光层析法、硼酸亲和色谱法、胶乳免疫比浊法"
+          ],
+          "applicationsEn": [
+            "HPLC, fluorescence chromatography, boronate affinity chromatography, latex immunoturbidimetry"
+          ],
+          "specs": "浓缩",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/8.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-HBP-02",
+          "name": "肝素结合蛋白-02",
+          "nameEn": "Heparin-binding protein-02",
+          "description": "肝素结合蛋白（HBP）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/10.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-Lp-PLA2-02",
+          "name": "脂蛋白相关磷脂酶A2-02",
+          "nameEn": "Lipoprotein-associated phospholipase A2-02",
+          "description": "脂蛋白相关磷脂酶A2（Lp-PLA2）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/15.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-Lpa",
+          "name": "脂蛋白a",
+          "nameEn": "Lipoprotein(a)",
+          "description": "脂蛋白a(Lp(a))产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/3.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-PA",
+          "name": "前白蛋白",
+          "nameEn": "Prealbumin",
+          "description": "前白蛋白（PA）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/49.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-PCT",
+          "name": "降钙素原",
+          "nameEn": "Procalcitonin",
+          "description": "降钙素原（PCT）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/11.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-PGI",
+          "name": "胃蛋白酶原I",
+          "nameEn": "Pepsinogen I",
+          "description": "胃蛋白酶原I产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/9.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-PGII",
+          "name": "胃蛋白酶原II",
+          "nameEn": "Pepsinogen II",
+          "description": "胃蛋白酶原II产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/43.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-RBP",
+          "name": "视黄醇结合蛋白",
+          "nameEn": "Retinol-binding protein",
+          "description": "视黄醇结合蛋白（RBP）产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/16.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Ag-SAA-02",
+          "name": "血清淀粉样蛋白A-02",
+          "nameEn": "Serum amyloid A-02",
+          "description": "血清淀粉样蛋白A(SAA)产品。类型：校准质控原料；应用：/。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Calibration and QC material; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "校准质控原料"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Calibration and QC material"
+          ],
+          "applications": [
+            "/"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "校准质控原料",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/47.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Alb-01",
+          "name": "白蛋白(Alb)",
+          "nameEn": "Albumin(Alb)",
+          "description": "白蛋白(Alb)产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/26.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-APOA1-01",
+          "name": "载脂蛋白A1（APOA1）",
+          "nameEn": "Apolipoprotein A1 (APOA1)",
+          "description": "载脂蛋白A1（APOA1）产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/56.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-APOB-01",
+          "name": "载脂蛋白B（APOB）",
+          "nameEn": "Apolipoprotein B (APOB)",
+          "description": "载脂蛋白B（APOB）产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/57.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-As-ApoA1",
+          "name": "载脂蛋白A1 抗血清",
+          "nameEn": "Apolipoprotein A1 antiserum",
+          "description": "载脂蛋白A1（ApoA1）产品。类型：抗血清；应用：免疫比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Antiserum; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "抗血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Antiserum"
+          ],
+          "applications": [
+            "免疫比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/1301506056563417088.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-As-ApoB",
+          "name": "载脂蛋白B 抗血清",
+          "nameEn": "Apolipoprotein B antiserum",
+          "description": "载脂蛋白B（ApoB）产品。类型：抗血清；应用：免疫比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Antiserum; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "抗血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Antiserum"
+          ],
+          "applications": [
+            "免疫比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/4.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-AS-PA",
+          "name": "前白蛋白抗血清",
+          "nameEn": "Prealbumin antiserum",
+          "description": "前白蛋白（PA）产品。类型：抗血清；应用：免疫比浊。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: Antiserum; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "抗血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Antiserum"
+          ],
+          "applications": [
+            "免疫比浊"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "抗血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/49.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-ASO-01",
+          "name": "抗链球菌溶血素0(ASO)",
+          "nameEn": "Anti-streptolysin O(ASO)",
+          "description": "抗链球菌溶血素0(ASO)产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/32.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-C1q-01",
+          "name": "补体C1q（C1q）",
+          "nameEn": "Complement C1q (C1q)",
+          "description": "补体C1q（C1q）产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/54.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-CAL-PGI",
+          "name": "胃蛋白酶原I校准品☆",
+          "nameEn": "Pepsinogen I calibrator",
+          "description": "胃蛋白酶原II（PGII）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/60.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-CAL-PGII",
+          "name": "胃蛋白酶原II校准品☆",
+          "nameEn": "Pepsinogen II calibrator",
+          "description": "胃蛋白酶原II（PGII）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/60.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-CKMB-01",
+          "name": "肌酸激酶同工酶(CKMB)",
+          "nameEn": "Creatine kinase-MB(CKMB)",
+          "description": "肌酸激酶同工酶(CKMB)产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/35.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-COL-IV-02",
+          "name": "Ⅳ型胶原蛋白（COL-IV）",
+          "nameEn": "Type IV collagen (COL-IV)",
+          "description": "Ⅳ型胶原蛋白（COL-IV）产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/50.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Cr-01",
+          "name": "肌酐（Cr）",
+          "nameEn": "Creatinine (Cr)",
+          "description": "肌酐（Cr）产品。类型：血清；应用：生化/特蛋。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化/特蛋"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/55.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-CRP-02",
+          "name": "C反应蛋白(CRP)",
+          "nameEn": "C-reactive protein(CRP)",
+          "description": "C反应蛋白(CRP)产品。类型：血清、血浆；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清、血浆"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清、血浆",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/23.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-CRP-S02",
+          "name": "LD-CRP-S02",
+          "nameEn": "LD-CRP-S02",
+          "description": "C反应蛋白(CRP)产品。类型：血清、血浆、全血；应用：特蛋。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清、血浆、全血"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "特蛋"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清、血浆、全血",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/23.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-CysC-03",
+          "name": "胱抑素C(CysC)",
+          "nameEn": "Cystatin C(CysC)",
+          "description": "胱抑素C(CysC)产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/30.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-DD-02",
+          "name": "D-二聚体(D-Dimer)",
+          "nameEn": "D-dimer(D-Dimer)",
+          "description": "D-二聚体(D-Dimer)产品。类型：枸橼酸钠抗凝血浆；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "枸橼酸钠抗凝血浆"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "枸橼酸钠抗凝血浆",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/28.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-DD-10",
+          "name": "LD-DD-10",
+          "nameEn": "LD-DD-10",
+          "description": "D-二聚体(D-Dimer)产品。类型：枸橼酸钠抗凝血浆；应用：sysmex血凝仪。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "枸橼酸钠抗凝血浆"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "sysmex血凝仪"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "枸橼酸钠抗凝血浆",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/28.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Fer-01",
+          "name": "铁蛋白（Ferritin）",
+          "nameEn": "Ferritin (Ferritin)",
+          "description": "铁蛋白（Ferritin）产品。类型：血清或血浆；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清或血浆"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清或血浆",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/52.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-GA-01",
+          "name": "糖化白蛋白(GA)",
+          "nameEn": "Glycated albumin(GA)",
+          "description": "糖化白蛋白(GA)产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/25.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-HBP-03",
+          "name": "肝素结合蛋白（HBP）",
+          "nameEn": "Heparin-binding protein (HBP)",
+          "description": "肝素结合蛋白(HBP)产品。类型：枸橼酸钠抗凝血浆；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "枸橼酸钠抗凝血浆"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "枸橼酸钠抗凝血浆",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/21.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-HDL-C-01",
+          "name": "高密度脂蛋白胆固醇 （HDL）",
+          "nameEn": "High-density lipoprotein cholesterol (HDL)",
+          "description": "低密度脂蛋白胆固醇 （LDL）产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/59.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-LDL-C-01",
+          "name": "低密度脂蛋白胆固醇 （LDL）",
+          "nameEn": "Low-density lipoprotein cholesterol (LDL)",
+          "description": "低密度脂蛋白胆固醇 （LDL）产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/59.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Lp-PLA2-01",
+          "name": "脂蛋白相关磷脂酶A2 (Lp-PLA2)",
+          "nameEn": "Lipoprotein-associated phospholipase A2 (Lp-PLA2)",
+          "description": "脂蛋白相关磷脂酶A2 (Lp-PLA2)产品。类型：血清；应用：生化/特蛋。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化/特蛋"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/29.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Lp-PLA2-02",
+          "name": "LD-Lp-PLA2-02",
+          "nameEn": "LD-Lp-PLA2-02",
+          "description": "脂蛋白相关磷脂酶A2 (Lp-PLA2)产品。类型：血清；应用：生化/特蛋。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化/特蛋"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/29.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-Lpa-01",
+          "name": "脂蛋白a(Lp(a))",
+          "nameEn": "Lipoprotein(a)(Lp(a))",
+          "description": "脂蛋白a(Lp(a))产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/34.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-ADP-CAL",
+          "name": "脂联素校准品☆",
+          "nameEn": "Adiponectin calibrator",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-ADP-QC",
+          "name": "脂联素质控品☆",
+          "nameEn": "Adiponectin quality control",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-CRP-CAL",
+          "name": "C反应蛋白校准品",
+          "nameEn": "C-reactive protein calibrator",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-CRP-QC",
+          "name": "C反应蛋白质控品",
+          "nameEn": "C-reactive protein quality control",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-HbA1c-CAL",
+          "name": "糖化血红蛋白校准品☆",
+          "nameEn": "Glycated hemoglobin calibrator",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-HbA1c-QC",
+          "name": "糖化血红蛋白质控品☆",
+          "nameEn": "Glycated hemoglobin quality control",
+          "description": "脂联素（ADP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/62.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-HBP-CAL",
+          "name": "肝素结合蛋白校准品",
+          "nameEn": "Heparin-binding protein calibrator",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-HBP-QC",
+          "name": "肝素结合蛋白质控品",
+          "nameEn": "Heparin-binding protein quality control",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-PCT-CAL",
+          "name": "降钙素原校准品",
+          "nameEn": "Procalcitonin calibrator",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-PCT-QC",
+          "name": "降钙素原质控品",
+          "nameEn": "Procalcitonin quality control",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-SAA",
+          "name": "血清淀粉样蛋白OEM试剂",
+          "nameEn": "Serum amyloid A OEM reagent",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-SAA-CAL",
+          "name": "血清淀粉样蛋白校准品",
+          "nameEn": "Serum amyloid A calibrator",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-OEM-SAA-QC",
+          "name": "血清淀粉样蛋白质控品",
+          "nameEn": "Serum amyloid A quality control",
+          "description": "肝素结合蛋白（HBP）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/63.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-PA-01",
+          "name": "前白蛋白（PA）",
+          "nameEn": "Prealbumin（PA）",
+          "description": "前白蛋白（PA）产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/51.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-(S)α1MG",
+          "name": "(血清)α1-微球蛋白质控品",
+          "nameEn": "Serum α1-microglobulin quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-(U)α1MG",
+          "name": "(尿)α1-微球蛋白质控品",
+          "nameEn": "Urine α1-microglobulin quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-ADP",
+          "name": "脂联素质控品",
+          "nameEn": "Adiponectin quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-ASO",
+          "name": "抗链球菌溶血素O质控品",
+          "nameEn": "Anti-streptolysin O quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-C1q",
+          "name": "补体C1q质控品",
+          "nameEn": "Complement C1q quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-CRP",
+          "name": "C反应蛋白质控品",
+          "nameEn": "C-reactive protein quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-CysC",
+          "name": "胱抑素C质控品",
+          "nameEn": "Cystatin C quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-D-Dimer",
+          "name": "D-二聚体质控品",
+          "nameEn": "D-dimer quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-FDP",
+          "name": "纤维蛋白（原）降解产物质控品",
+          "nameEn": "Fibrin(ogen) degradation products quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-HbA1c",
+          "name": "糖化血红蛋白质控品",
+          "nameEn": "Glycated hemoglobin quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-HbA1c-1",
+          "name": "HbA1c质控品1",
+          "nameEn": "HbA1c control product 1",
+          "description": "糖化血红蛋白质控品产品。类型：非浓缩；应用：胶乳免疫比浊法。",
+          "descriptionEn": "Glycated Hemoglobin Control. Type: Non-concentrated; application: Latex immunoturbidimetry.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "非浓缩"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Non-concentrated"
+          ],
+          "applications": [
+            "胶乳免疫比浊法"
+          ],
+          "applicationsEn": [
+            "Latex immunoturbidimetry"
+          ],
+          "specs": "非浓缩",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/8.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-HbA1c-7",
+          "name": "HbA1c质控品1",
+          "nameEn": "HbA1c control product 1",
+          "description": "糖化血红蛋白质控品产品。类型：浓缩；应用：荧光层析法、硼酸亲和色谱法。",
+          "descriptionEn": "Glycated Hemoglobin Control. Type: Concentrated; application: Fluorescence chromatography, boronate affinity chromatography.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "浓缩"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "Concentrated"
+          ],
+          "applications": [
+            "荧光层析法、硼酸亲和色谱法"
+          ],
+          "applicationsEn": [
+            "Fluorescence chromatography, boronate affinity chromatography"
+          ],
+          "specs": "浓缩",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/8.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-HBP",
+          "name": "肝素结合蛋白质控品",
+          "nameEn": "Heparin-binding protein quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-Lp-PLA2",
+          "name": "脂蛋白相关磷脂酶A2质控品",
+          "nameEn": "Lipoprotein-associated phospholipase A2 quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-NGAL",
+          "name": "中性粒细胞明胶酶相关载脂蛋白质控品",
+          "nameEn": "Neutrophil gelatinase-associated lipocalin quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-PCT",
+          "name": "降钙素原质控品",
+          "nameEn": "Procalcitonin quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-PGI",
+          "name": "胃蛋白酶原I质控品☆",
+          "nameEn": "Pepsinogen I quality control",
+          "description": "胃蛋白酶原II（PGII）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/60.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-PGII",
+          "name": "胃蛋白酶原II质控品☆",
+          "nameEn": "Pepsinogen II quality control",
+          "description": "胃蛋白酶原II（PGII）产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/60.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-RBP",
+          "name": "视黄醇结合蛋白质控品",
+          "nameEn": "Retinol-binding protein quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-SAA",
+          "name": "血清淀粉样蛋白A质控品",
+          "nameEn": "Serum amyloid A quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-SAA-1",
+          "name": "LD-QC-SAA-1",
+          "nameEn": "LD-QC-SAA-1",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-QC-β2MG",
+          "name": "β2-微球蛋白质控品",
+          "nameEn": "Β2-microglobulin quality control",
+          "description": "重组蛋白质控品产品。类型：IVD产品；应用：体外诊断。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "IVD产品"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "体外诊断"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "IVD产品",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product/70.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-RBP-01",
+          "name": "视黄醇结合蛋白(RBP)",
+          "nameEn": "Retinol-binding protein(RBP)",
+          "description": "视黄醇结合蛋白(RBP)产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/31.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-RF-01",
+          "name": "类风湿因子(RF)",
+          "nameEn": "Rheumatoid factor(RF)",
+          "description": "类风湿因子(RF)产品。类型：血清；应用：生化。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/33.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-SAA-01",
+          "name": "血清淀粉样蛋白A(SAA)",
+          "nameEn": "Serum amyloid A(SAA)",
+          "description": "血清淀粉样蛋白A(SAA)产品。类型：血清、血浆；应用：生化/特蛋。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清、血浆"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化/特蛋"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清、血浆",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/22.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-SAA-02",
+          "name": "LD-SAA-02",
+          "nameEn": "LD-SAA-02",
+          "description": "血清淀粉样蛋白A(SAA)产品。类型：血清、血浆；应用：生化/特蛋。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清、血浆"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化/特蛋"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清、血浆",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/22.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        },
+        {
+          "id": "LD-SAA-06",
+          "name": "LD-SAA-06",
+          "nameEn": "LD-SAA-06",
+          "description": "血清淀粉样蛋白A(SAA)产品。类型：血清、血浆；应用：生化/特蛋。",
+          "descriptionEn": "LeadingMed diagnostic product. Type: IVD product; application: In vitro diagnostics.",
+          "tags": [
+            "立顶医疗",
+            "质控品",
+            "血清、血浆"
+          ],
+          "tagsEn": [
+            "LeadingMed",
+            "Quality Controls",
+            "IVD product"
+          ],
+          "applications": [
+            "生化/特蛋"
+          ],
+          "applicationsEn": [
+            "In vitro diagnostics"
+          ],
+          "specs": "血清、血浆",
+          "status": "Available by inquiry",
+          "source": "https://www.leadingmed.cn/product_xq/22.html",
+          "note": "产品信息来自立顶医疗官方公开目录。具体规格、批次和供应状态以销售确认为准。",
+          "listPrice": "询价"
+        }
+      ]
+    }
+  ]
+}
