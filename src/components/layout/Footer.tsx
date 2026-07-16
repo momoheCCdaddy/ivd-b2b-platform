@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { FlaskConical, Phone, Mail, MapPin, ShieldCheck, Award } from 'lucide-react';
 import { useI18n } from '@/lib/i18n';
+import { openCookieSettings } from '@/lib/privacy-consent';
 
 export default function Footer() {
   const { t } = useI18n();
@@ -31,7 +32,6 @@ export default function Footer() {
       links: [
         { label: t("footer.support.faq"), href: '/faq' },
         { label: t("footer.support.contact"), href: '/contact' },
-        { label: 'FAQ', href: '/faq' },
         { label: t("footer.support.privacy"), href: '/privacy' },
       ],
     },
@@ -123,8 +123,9 @@ export default function Footer() {
               {t("footer.privacy")}
             </Link>
             <Link href="/faq" className="text-xs text-secondary-400 hover:text-secondary-200 transition-colors">
-              FAQ
+              {t("footer.support.faq")}
             </Link>
+            <button type="button" onClick={openCookieSettings} className="text-xs text-secondary-400 transition-colors hover:text-secondary-200">{t("cookie.settings")}</button>
           </div>
         </div>
       </div>
