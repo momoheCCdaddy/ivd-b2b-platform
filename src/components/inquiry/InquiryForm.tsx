@@ -1,8 +1,9 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
-import { CheckCircle2, Loader2, Send } from "lucide-react";
+import { CheckCircle2, Loader2, Mail, Send } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import { salesMailto } from "@/lib/sales-mailto";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -10,6 +11,7 @@ export default function InquiryForm({ productId = "", productName = "" }: { prod
   const { lang, currency, t } = useI18n();
   const [state, setState] = useState<FormState>("idle");
   const [feedback, setFeedback] = useState("");
+  const [fallbackHref, setFallbackHref] = useState("");
   const initialMessage = useMemo(
     () => productId ? t("inquiry.initialMessage", { product: `${productId}${productName ? ` — ${productName}` : ""}` }) : "",
     [productId, productName, t],
@@ -19,6 +21,7 @@ export default function InquiryForm({ productId = "", productName = "" }: { prod
     event.preventDefault();
     setState("submitting");
     setFeedback("");
+    setFallbackHref("");
     const form = event.currentTarget;
     const data = new FormData(form);
     const payload = Object.fromEntries(data.entries());
@@ -40,13 +43,17 @@ export default function InquiryForm({ productId = "", productName = "" }: { prod
         }),
       });
       const result = await response.json();
-      if (!response.ok) throw new Error(result.error || "Submission failed.");
+      if (!response.ok) throw new Error(response.status >= 500 ? t("inquiry.serviceUnavailable") : result.error || "Submission failed.");
       setState("success");
       setFeedback(t("inquiry.success", { number: result.inquiryNumber }));
       form.reset();
     } catch (error) {
       setState("error");
       setFeedback(error instanceof Error ? error.message : "Unable to submit your inquiry.");
+      setFallbackHref(salesMailto(
+        `Product inquiry${productId ? ` - ${productId}` : ""}`,
+        [["Name", payload.fullName], ["Business email", payload.email], ["Company", payload.company], ["Country", payload.country], ["Phone", payload.phone], ["Product", productId || "General inquiry"], ["Product name", productName], ["Quantity", payload.quantity], ["Currency", payload.currency], ["Inquiry type", payload.inquiryType], ["Requirements", payload.message], ["Page", window.location.href]],
+      ));
     }
   }
 
@@ -75,7 +82,7 @@ export default function InquiryForm({ productId = "", productName = "" }: { prod
       <label className="block text-sm font-medium text-secondary-700">{t("inquiry.requirements")} *<textarea required name="message" rows={6} defaultValue={initialMessage} className={`${fieldClass} mt-2 resize-y`} placeholder={t("inquiry.requirementsPlaceholder")} /></label>
       <label className="flex items-start gap-3 text-xs leading-relaxed text-secondary-500"><input required name="consentPrivacy" type="checkbox" className="mt-0.5 h-4 w-4 rounded border-secondary-300 text-primary-600" /><span>{t("inquiry.agreeTo")} <a href="/privacy" className="font-medium text-primary-600 hover:underline">{t("inquiry.privacyPolicy")}</a> {t("inquiry.consent")} *</span></label>
       <label className="flex items-start gap-3 text-xs leading-relaxed text-secondary-500"><input name="consentMarketing" type="checkbox" className="mt-0.5 h-4 w-4 rounded border-secondary-300 text-primary-600" /><span>{t("inquiry.marketing")}</span></label>
-      {feedback && <div role="status" className={`rounded-xl border p-4 text-sm ${state === "success" ? "border-emerald-200 bg-emerald-50 text-emerald-800" : "border-red-200 bg-red-50 text-red-700"}`}>{state === "success" && <CheckCircle2 className="mr-2 inline h-4 w-4" />}{feedback}</div>}
+      {feedback && <div role="status" className={`rounded-xl border p-4 text-sm ${state === "success" ? "border-emerald-200 bg-emerald-50 text-emerald-800" : "border-red-200 bg-red-50 text-red-700"}`}><div>{state === "success" && <CheckCircle2 className="mr-2 inline h-4 w-4" />}{feedback}</div>{fallbackHref && <a href={fallbackHref} className="mt-3 inline-flex items-center gap-2 rounded-lg bg-red-700 px-4 py-2 text-xs font-semibold text-white hover:bg-red-800"><Mail className="h-3.5 w-3.5" />{t("inquiry.emailSales")}</a>}</div>}
       <button disabled={state === "submitting"} className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-700 disabled:cursor-not-allowed disabled:opacity-60">
         {state === "submitting" ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
         {state === "submitting" ? t("inquiry.submitting") : t("inquiry.submit")}

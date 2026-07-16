@@ -1,0 +1,56 @@
+{
+  "en": {
+    "inquiry.serviceUnavailable": "Online storage is temporarily unavailable. Your information remains in this form; please email our sales team directly.",
+    "inquiry.emailSales": "Email sales with these details",
+    "quote.serviceUnavailable": "Quote storage is temporarily unavailable. Please email our sales team to receive a formal quotation.",
+    "quote.emailSales": "Email this quote request"
+  },
+  "zh": {
+    "inquiry.serviceUnavailable": "在线存储暂时不可用，您填写的信息仍保留在表单中；请直接发送邮件给销售团队。",
+    "inquiry.emailSales": "将当前信息发送给销售",
+    "quote.serviceUnavailable": "报价存储暂时不可用，请发送邮件给销售团队以获取正式报价。",
+    "quote.emailSales": "通过邮件发送报价申请"
+  },
+  "de": {
+    "inquiry.serviceUnavailable": "Die Online-Speicherung ist vorübergehend nicht verfügbar. Ihre Angaben bleiben im Formular; senden Sie sie bitte direkt per E-Mail an unser Vertriebsteam.",
+    "inquiry.emailSales": "Angaben per E-Mail senden",
+    "quote.serviceUnavailable": "Die Angebotsspeicherung ist vorübergehend nicht verfügbar. Fordern Sie ein formelles Angebot bitte per E-Mail an.",
+    "quote.emailSales": "Angebotsanfrage per E-Mail senden"
+  },
+  "fr": {
+    "inquiry.serviceUnavailable": "Le stockage en ligne est temporairement indisponible. Vos informations restent dans le formulaire ; envoyez-les directement à notre équipe commerciale.",
+    "inquiry.emailSales": "Envoyer ces informations par e-mail",
+    "quote.serviceUnavailable": "L’enregistrement du devis est temporairement indisponible. Contactez notre équipe commerciale par e-mail pour recevoir un devis formel.",
+    "quote.emailSales": "Envoyer la demande de devis par e-mail"
+  },
+  "es": {
+    "inquiry.serviceUnavailable": "El almacenamiento en línea no está disponible temporalmente. Sus datos permanecen en el formulario; envíelos directamente por correo a nuestro equipo comercial.",
+    "inquiry.emailSales": "Enviar estos datos por correo",
+    "quote.serviceUnavailable": "El almacenamiento de cotizaciones no está disponible temporalmente. Envíe un correo a nuestro equipo comercial para recibir una cotización formal.",
+    "quote.emailSales": "Enviar solicitud de cotización por correo"
+  },
+  "id": {
+    "inquiry.serviceUnavailable": "Penyimpanan online sementara tidak tersedia. Informasi Anda tetap ada di formulir; silakan kirim langsung melalui email ke tim penjualan kami.",
+    "inquiry.emailSales": "Kirim rincian ini melalui email",
+    "quote.serviceUnavailable": "Penyimpanan penawaran sementara tidak tersedia. Kirim email ke tim penjualan kami untuk menerima penawaran resmi.",
+    "quote.emailSales": "Kirim permintaan penawaran melalui email"
+  },
+  "th": {
+    "inquiry.serviceUnavailable": "ระบบจัดเก็บออนไลน์ไม่พร้อมใช้งานชั่วคราว ข้อมูลของคุณยังอยู่ในแบบฟอร์ม โปรดส่งอีเมลถึงทีมขายโดยตรง",
+    "inquiry.emailSales": "ส่งรายละเอียดนี้ให้ฝ่ายขายทางอีเมล",
+    "quote.serviceUnavailable": "ระบบจัดเก็บใบเสนอราคาไม่พร้อมใช้งานชั่วคราว โปรดส่งอีเมลถึงทีมขายเพื่อรับใบเสนอราคาอย่างเป็นทางการ",
+    "quote.emailSales": "ส่งคำขอใบเสนอราคาทางอีเมล"
+  },
+  "vi": {
+    "inquiry.serviceUnavailable": "Hệ thống lưu trữ trực tuyến tạm thời không khả dụng. Thông tin vẫn còn trong biểu mẫu; vui lòng gửi email trực tiếp cho đội ngũ kinh doanh.",
+    "inquiry.emailSales": "Gửi các thông tin này qua email",
+    "quote.serviceUnavailable": "Hệ thống lưu báo giá tạm thời không khả dụng. Vui lòng gửi email cho đội ngũ kinh doanh để nhận báo giá chính thức.",
+    "quote.emailSales": "Gửi yêu cầu báo giá qua email"
+  },
+  "ar": {
+    "inquiry.serviceUnavailable": "التخزين الإلكتروني غير متاح مؤقتاً. ستبقى بياناتك في النموذج؛ يرجى إرسالها مباشرة إلى فريق المبيعات عبر البريد الإلكتروني.",
+    "inquiry.emailSales": "إرسال هذه التفاصيل إلى المبيعات",
+    "quote.serviceUnavailable": "حفظ عرض السعر غير متاح مؤقتاً. يرجى مراسلة فريق المبيعات للحصول على عرض رسمي.",
+    "quote.emailSales": "إرسال طلب عرض السعر بالبريد"
+  }
+}

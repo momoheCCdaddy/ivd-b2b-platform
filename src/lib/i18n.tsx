@@ -42,17 +42,18 @@ import idMsgs from "../../messages/id.json";
 import thMsgs from "../../messages/th.json";
 import viMsgs from "../../messages/vi.json";
 import salesMsgs from "../../messages/sales.json";
+import fallbackMsgs from "../../messages/fallback.json";
 
 const MESSAGES: Record<string, Record<string, string>> = {
-  en: { ...enMsgs, ...salesMsgs.en } as Record<string, string>,
-  zh: { ...zhMsgs, ...salesMsgs.zh } as Record<string, string>,
-  ar: { ...arMsgs, ...salesMsgs.ar } as Record<string, string>,
-  de: { ...deMsgs, ...salesMsgs.de } as Record<string, string>,
-  fr: { ...frMsgs, ...salesMsgs.fr } as Record<string, string>,
-  es: { ...esMsgs, ...salesMsgs.es } as Record<string, string>,
-  id: { ...idMsgs, ...salesMsgs.id } as Record<string, string>,
-  th: { ...thMsgs, ...salesMsgs.th } as Record<string, string>,
-  vi: { ...viMsgs, ...salesMsgs.vi } as Record<string, string>,
+  en: { ...enMsgs, ...salesMsgs.en, ...fallbackMsgs.en } as Record<string, string>,
+  zh: { ...zhMsgs, ...salesMsgs.zh, ...fallbackMsgs.zh } as Record<string, string>,
+  ar: { ...arMsgs, ...salesMsgs.ar, ...fallbackMsgs.ar } as Record<string, string>,
+  de: { ...deMsgs, ...salesMsgs.de, ...fallbackMsgs.de } as Record<string, string>,
+  fr: { ...frMsgs, ...salesMsgs.fr, ...fallbackMsgs.fr } as Record<string, string>,
+  es: { ...esMsgs, ...salesMsgs.es, ...fallbackMsgs.es } as Record<string, string>,
+  id: { ...idMsgs, ...salesMsgs.id, ...fallbackMsgs.id } as Record<string, string>,
+  th: { ...thMsgs, ...salesMsgs.th, ...fallbackMsgs.th } as Record<string, string>,
+  vi: { ...viMsgs, ...salesMsgs.vi, ...fallbackMsgs.vi } as Record<string, string>,
 };
 
 const isSupportedLang = (value: string | null): value is Lang => LANGUAGES.some(language => language.code === value);
