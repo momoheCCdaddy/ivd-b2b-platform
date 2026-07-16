@@ -1,0 +1,67 @@
+{
+  "en": {},
+  "zh": {},
+  "de": {
+    "products.detail.tags": "Tags",
+    "products.detail.notes": "Hinweise",
+    "products.detail.instantQuote": "Sofortpreis & PDF-Angebot",
+    "products.detail.listPrice": "Listenpreis",
+    "products.detail.dailyPrice": "Tagespreis",
+    "products.detail.downloadDataSheet": "Produktdatenblatt herunterladen (PDF)",
+    "products.detail.batchDocuments": "COA und chargenspezifische QC-Unterlagen sind nach Prüfung von Produkt und Charge auf Anfrage erhältlich."
+  },
+  "fr": {
+    "products.detail.tags": "Étiquettes",
+    "products.detail.notes": "Notes",
+    "products.detail.instantQuote": "Prix instantané et devis PDF",
+    "products.detail.listPrice": "Prix catalogue",
+    "products.detail.dailyPrice": "Prix journalier",
+    "products.detail.downloadDataSheet": "Télécharger la fiche produit (PDF)",
+    "products.detail.batchDocuments": "Le certificat d’analyse (COA) et les dossiers CQ propres au lot sont disponibles sur demande après vérification du produit et du lot."
+  },
+  "es": {
+    "products.detail.tags": "Etiquetas",
+    "products.detail.notes": "Notas",
+    "products.detail.instantQuote": "Precio instantáneo y cotización en PDF",
+    "products.detail.listPrice": "Precio de lista",
+    "products.detail.dailyPrice": "Precio diario",
+    "products.detail.downloadDataSheet": "Descargar ficha técnica del producto (PDF)",
+    "products.detail.batchDocuments": "El COA y los registros de CC específicos del lote están disponibles previa solicitud tras verificar el producto y el lote."
+  },
+  "id": {
+    "products.detail.tags": "Tag",
+    "products.detail.notes": "Catatan",
+    "products.detail.instantQuote": "Harga instan & penawaran PDF",
+    "products.detail.listPrice": "Harga katalog",
+    "products.detail.dailyPrice": "Harga harian",
+    "products.detail.downloadDataSheet": "Unduh lembar data produk (PDF)",
+    "products.detail.batchDocuments": "COA dan catatan QC khusus batch tersedia atas permintaan setelah verifikasi produk dan nomor batch."
+  },
+  "th": {
+    "products.detail.tags": "แท็ก",
+    "products.detail.notes": "หมายเหตุ",
+    "products.detail.instantQuote": "ราคาทันทีและใบเสนอราคา PDF",
+    "products.detail.listPrice": "ราคาปลีก",
+    "products.detail.dailyPrice": "ราคารายวัน",
+    "products.detail.downloadDataSheet": "ดาวน์โหลดเอกสารข้อมูลผลิตภัณฑ์ (PDF)",
+    "products.detail.batchDocuments": "สามารถขอ COA และบันทึก QC เฉพาะล็อตได้หลังจากตรวจสอบผลิตภัณฑ์และหมายเลขล็อตแล้ว"
+  },
+  "vi": {
+    "products.detail.tags": "Thẻ",
+    "products.detail.notes": "Ghi chú",
+    "products.detail.instantQuote": "Giá tức thời & báo giá PDF",
+    "products.detail.listPrice": "Giá niêm yết",
+    "products.detail.dailyPrice": "Giá theo ngày",
+    "products.detail.downloadDataSheet": "Tải bảng dữ liệu sản phẩm (PDF)",
+    "products.detail.batchDocuments": "COA và hồ sơ QC theo lô được cung cấp theo yêu cầu sau khi xác minh sản phẩm và số lô."
+  },
+  "ar": {
+    "products.detail.tags": "الوسوم",
+    "products.detail.notes": "ملاحظات",
+    "products.detail.instantQuote": "سعر فوري وعرض سعر PDF",
+    "products.detail.listPrice": "سعر القائمة",
+    "products.detail.dailyPrice": "السعر اليومي",
+    "products.detail.downloadDataSheet": "تنزيل ورقة بيانات المنتج (PDF)",
+    "products.detail.batchDocuments": "تتوفر شهادة التحليل (COA) وسجلات ضبط الجودة الخاصة بالتشغيلة عند الطلب بعد التحقق من المنتج ورقم التشغيلة."
+  }
+}

@@ -44,17 +44,18 @@ import viMsgs from "../../messages/vi.json";
 import salesMsgs from "../../messages/sales.json";
 import fallbackMsgs from "../../messages/fallback.json";
 import storefrontMsgs from "../../messages/storefront.json";
+import productDetailMsgs from "../../messages/product-detail.json";
 
 const MESSAGES: Record<string, Record<string, string>> = {
-  en: { ...enMsgs, ...salesMsgs.en, ...fallbackMsgs.en, ...storefrontMsgs.en } as Record<string, string>,
-  zh: { ...zhMsgs, ...salesMsgs.zh, ...fallbackMsgs.zh, ...storefrontMsgs.zh } as Record<string, string>,
-  ar: { ...arMsgs, ...salesMsgs.ar, ...fallbackMsgs.ar, ...storefrontMsgs.ar } as Record<string, string>,
-  de: { ...deMsgs, ...salesMsgs.de, ...fallbackMsgs.de, ...storefrontMsgs.de } as Record<string, string>,
-  fr: { ...frMsgs, ...salesMsgs.fr, ...fallbackMsgs.fr, ...storefrontMsgs.fr } as Record<string, string>,
-  es: { ...esMsgs, ...salesMsgs.es, ...fallbackMsgs.es, ...storefrontMsgs.es } as Record<string, string>,
-  id: { ...idMsgs, ...salesMsgs.id, ...fallbackMsgs.id, ...storefrontMsgs.id } as Record<string, string>,
-  th: { ...thMsgs, ...salesMsgs.th, ...fallbackMsgs.th, ...storefrontMsgs.th } as Record<string, string>,
-  vi: { ...viMsgs, ...salesMsgs.vi, ...fallbackMsgs.vi, ...storefrontMsgs.vi } as Record<string, string>,
+  en: { ...enMsgs, ...salesMsgs.en, ...fallbackMsgs.en, ...storefrontMsgs.en, ...productDetailMsgs.en } as Record<string, string>,
+  zh: { ...zhMsgs, ...salesMsgs.zh, ...fallbackMsgs.zh, ...storefrontMsgs.zh, ...productDetailMsgs.zh } as Record<string, string>,
+  ar: { ...arMsgs, ...salesMsgs.ar, ...fallbackMsgs.ar, ...storefrontMsgs.ar, ...productDetailMsgs.ar } as Record<string, string>,
+  de: { ...deMsgs, ...salesMsgs.de, ...fallbackMsgs.de, ...storefrontMsgs.de, ...productDetailMsgs.de } as Record<string, string>,
+  fr: { ...frMsgs, ...salesMsgs.fr, ...fallbackMsgs.fr, ...storefrontMsgs.fr, ...productDetailMsgs.fr } as Record<string, string>,
+  es: { ...esMsgs, ...salesMsgs.es, ...fallbackMsgs.es, ...storefrontMsgs.es, ...productDetailMsgs.es } as Record<string, string>,
+  id: { ...idMsgs, ...salesMsgs.id, ...fallbackMsgs.id, ...storefrontMsgs.id, ...productDetailMsgs.id } as Record<string, string>,
+  th: { ...thMsgs, ...salesMsgs.th, ...fallbackMsgs.th, ...storefrontMsgs.th, ...productDetailMsgs.th } as Record<string, string>,
+  vi: { ...viMsgs, ...salesMsgs.vi, ...fallbackMsgs.vi, ...storefrontMsgs.vi, ...productDetailMsgs.vi } as Record<string, string>,
 };
 
 const isSupportedLang = (value: string | null): value is Lang => LANGUAGES.some(language => language.code === value);
