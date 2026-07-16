@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { calculateQuote } from "@/lib/quote-pricing";
-import { supabaseInsert } from "@/lib/supabase-rest";
+import { supabaseInsert, supabaseUpsert } from "@/lib/supabase-rest";
 import { jsonRequestError, rateLimit, readJsonRequest } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
@@ -33,11 +33,15 @@ export async function POST(request: NextRequest) {
 
   const quoteNumber = `QT-${new Date().toISOString().slice(0, 10).replace(/-/g, "")}-${crypto.randomUUID().slice(0, 8).toUpperCase()}`;
   try {
-    const leads = await supabaseInsert("leads", {
-      full_name: fullName, email, company: company || null, country: country || null,
+    const leadPayload: Record<string, unknown> = {
+      full_name: fullName, email,
       preferred_language: clean(body.locale, 10) || "en", consent_privacy: true,
-      consent_marketing: Boolean(body.consentMarketing), source: "instant_quote",
-    }, true) as Array<{ id: string }>;
+      source: "instant_quote",
+    };
+    if (company) leadPayload.company = company;
+    if (country) leadPayload.country = country;
+    if (body.consentMarketing) leadPayload.consent_marketing = true;
+    const leads = await supabaseUpsert("leads", leadPayload, "email_normalized", true) as Array<{ id: string }>;
     const leadId = leads?.[0]?.id;
     if (!leadId) throw new Error("LEAD_ID_MISSING");
 
@@ -45,7 +49,7 @@ export async function POST(request: NextRequest) {
       quote_number: quoteNumber, lead_id: leadId, currency: calculated.currency,
       exchange_rate: calculated.exchangeRate, subtotal: calculated.subtotal,
       discount_rate: calculated.discountRate, discount_amount: calculated.discountAmount,
-      total: calculated.total, valid_until: calculated.validUntil, notes: notes || null, status: "sent",
+      total: calculated.total, valid_until: calculated.validUntil, notes: notes || null, status: "draft",
     }, true) as Array<{ id: string; public_token: string }>;
     const saved = quotes?.[0];
     if (!saved?.id || !saved.public_token) throw new Error("QUOTE_ID_MISSING");

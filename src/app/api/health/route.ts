@@ -4,14 +4,20 @@ import { supabaseRequest } from "@/lib/supabase-rest";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const requiredTables = ["leads", "inquiries", "quotes", "quote_items", "catalog_category_overrides"];
+const requiredChecks = [
+  "leads?select=id,email_normalized&limit=0",
+  "inquiries?select=id,inquiry_number,lead_id&limit=0",
+  "quotes?select=id,quote_number,public_token,lead_id&limit=0",
+  "quote_items?select=id,quote_id&limit=0",
+  "catalog_category_overrides?select=category_id&limit=0",
+];
 
 export async function GET() {
   const configured = Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
   let database: "ready" | "unconfigured" | "unavailable" = configured ? "unavailable" : "unconfigured";
   if (configured) {
     try {
-      await Promise.all(requiredTables.map(table => supabaseRequest(`${table}?select=*&limit=0`)));
+      await Promise.all(requiredChecks.map(path => supabaseRequest(path)));
       database = "ready";
     } catch {
       database = "unavailable";

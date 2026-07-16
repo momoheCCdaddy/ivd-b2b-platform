@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { supabaseInsert } from "@/lib/supabase-rest";
+import { supabaseInsert, supabaseUpsert } from "@/lib/supabase-rest";
 import { jsonRequestError, rateLimit, readJsonRequest } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
@@ -57,17 +57,22 @@ export async function POST(request: NextRequest) {
   const inquiryNumber = `INQ-${new Date().toISOString().slice(0, 10).replace(/-/g, "")}-${crypto.randomUUID().slice(0, 8).toUpperCase()}`;
 
   try {
-    const leads = await supabaseInsert("leads", {
+    const leadPayload: Record<string, unknown> = {
       full_name: fullName,
       email,
-      company: clean(payload.company, 180) || null,
-      phone: clean(payload.phone, 60) || null,
-      country: clean(payload.country, 100) || null,
       preferred_language: clean(payload.locale, 10) || "en",
       consent_privacy: true,
-      consent_marketing: Boolean(payload.consentMarketing),
       source: "website",
-    }, true) as Array<{ id: string }>;
+    };
+    const company = clean(payload.company, 180);
+    const phone = clean(payload.phone, 60);
+    const country = clean(payload.country, 100);
+    if (company) leadPayload.company = company;
+    if (phone) leadPayload.phone = phone;
+    if (country) leadPayload.country = country;
+    if (payload.consentMarketing) leadPayload.consent_marketing = true;
+
+    const leads = await supabaseUpsert("leads", leadPayload, "email_normalized", true) as Array<{ id: string }>;
 
     const leadId = leads?.[0]?.id;
     if (!leadId) throw new Error("LEAD_ID_MISSING");

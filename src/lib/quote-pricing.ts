@@ -26,7 +26,8 @@ function parsePrice(value?: string) {
 function getDiscount(quantity: number) {
   const raw = quantity >= 10 ? process.env.QUOTE_DISCOUNT_QTY_10 : quantity >= 5 ? process.env.QUOTE_DISCOUNT_QTY_5 : "0";
   const discount = Number(raw || 0);
-  return Number.isFinite(discount) ? Math.min(0.5, Math.max(0, discount)) : 0;
+  const normalized = discount >= 1 ? discount / 100 : discount;
+  return Number.isFinite(normalized) ? Math.min(0.5, Math.max(0, normalized)) : 0;
 }
 
 async function getExchangeRate(currency: QuoteCurrency): Promise<ExchangeRate> {

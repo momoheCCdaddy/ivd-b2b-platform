@@ -34,3 +34,11 @@ export async function supabaseInsert(path: string, body: unknown, returnRecord =
   });
 }
 
+export async function supabaseUpsert(path: string, body: unknown, conflictColumn: string, returnRecord = false) {
+  const separator = path.includes("?") ? "&" : "?";
+  return supabaseRequest(`${path}${separator}on_conflict=${encodeURIComponent(conflictColumn)}`, {
+    method: "POST",
+    headers: { Prefer: `resolution=merge-duplicates,${returnRecord ? "return=representation" : "return=minimal"}` },
+    body: JSON.stringify(body),
+  });
+}
