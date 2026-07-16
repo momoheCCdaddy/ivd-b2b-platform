@@ -1,6 +1,7 @@
 import productData from "./products.json";
 import leadingmedData from "./leadingmed-products.generated.json";
 import ningpuData from "./ningpu-products.generated.json";
+import { isPublicProduct } from "@/lib/catalog-visibility";
 
 export interface ProductItem {
   id: string; name: string; nameEn: string;
@@ -32,6 +33,12 @@ export interface ProductCategory {
 
 const baseProductCategories = productData as ProductCategory[];
 
+function publicItems(items: ProductSubCategory[]) {
+  return items
+    .map(item => ({ ...item, products: item.products.filter(isPublicProduct) }))
+    .filter(item => item.products.length > 0);
+}
+
 export const productCategories: ProductCategory[] = baseProductCategories.map((category) => {
   if (category.id === "ningpu-qc") {
     return {
@@ -39,7 +46,7 @@ export const productCategories: ProductCategory[] = baseProductCategories.map((c
       titleEn: "Ningpu Quality Controls",
       description: "江苏宁普医疗天然病原体分子、抗原、NGS及HPV细胞质控品",
       descriptionEn: "Ningpu natural-pathogen molecular, antigen, NGS, and HPV cellular quality controls",
-      items: ningpuData.items as ProductSubCategory[],
+      items: publicItems(ningpuData.items as ProductSubCategory[]),
     };
   }
 
@@ -49,9 +56,9 @@ export const productCategories: ProductCategory[] = baseProductCategories.map((c
       titleEn: "LeadingMed Products",
       description: "立顶医疗（LeadingMed）的体外诊断原料、质控品、微球与配套解决方案",
       descriptionEn: "LeadingMed IVD raw materials, quality controls, microspheres, and supporting solutions",
-      items: leadingmedData.items as ProductSubCategory[],
+      items: publicItems(leadingmedData.items as ProductSubCategory[]),
     };
   }
 
-  return category;
+  return { ...category, items: publicItems(category.items) };
 });
